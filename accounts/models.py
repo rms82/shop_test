@@ -5,27 +5,27 @@ from django.utils.translation import gettext_lazy as _
 
 # Create your manager here.
 class CustomUserManager(BaseUserManager):
-    def create_user(self, email, password=None):
+    def create_user(self, phone, password=None):
         """
         Creates and saves a User with the given email and password.
         """
-        if not email:
-            raise ValueError("Users must have an email address")
+        if not phone:
+            raise ValueError("Users must have a phone")
 
         user = self.model(
-            email=self.normalize_email(email),
+            phone=phone,
         )
 
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, password=None):
+    def create_superuser(self, phone, password=None):
         """
         Creates and saves a superuser with the given email and password.
         """
         user = self.create_user(
-            email,
+            phone,
             password=password,
         )
         user.is_admin = True
@@ -35,10 +35,13 @@ class CustomUserManager(BaseUserManager):
 
 # Create your user model here.
 class CustomUser(AbstractBaseUser):
+    phone = models.CharField(max_length=12, unique=True, verbose_name=_('Phone Number'))
     email = models.EmailField(
         verbose_name=_("email address"),
         max_length=255,
         unique=True,
+        blank=True,
+        null=True
     )
     fullname = models.CharField(max_length=128, null=True, blank=True)
 
@@ -47,11 +50,11 @@ class CustomUser(AbstractBaseUser):
 
     objects = CustomUserManager()
 
-    USERNAME_FIELD = "email"
+    USERNAME_FIELD = "phone"
     REQUIRED_FIELDS = []
 
     def __str__(self):
-        return self.email
+        return self.phone
 
     def has_perm(self, perm, obj=None):
         "Does the user have a specific permission?"
