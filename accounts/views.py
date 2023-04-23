@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
 from django.views.generic import CreateView, TemplateView, View
 from django.urls import reverse_lazy
+from django.utils.translation import gettext as _
 from .forms import CustomUserCreationForm, LoginForm
 
 
@@ -25,14 +26,8 @@ class LoginView(View):
                 return redirect('home')
 
             else:
-                form.add_error('phone', 'Wrong phone number or password!')
-
-        else:
-            form.add_error('phone', 'Invalid Data!!')
+                form.add_error('phone', _('Wrong phone number or password!'))
 
         return render(request, 'accounts/login.html', {
             'form': form,
         })
-
-
-
