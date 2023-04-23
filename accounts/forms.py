@@ -3,6 +3,7 @@ from django.contrib.auth import get_user_model
 from django import forms
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.core.exceptions import ValidationError
+from django.utils.translation import gettext_lazy as _
 
 
 # class CustomUserCreationForm(UserCreationForm):
@@ -35,7 +36,7 @@ class CustomUserCreationForm(forms.ModelForm):
         password1 = self.cleaned_data.get("password1")
         password2 = self.cleaned_data.get("password2")
         if password1 and password2 and password1 != password2:
-            raise ValidationError("Passwords don't match")
+            raise ValidationError(_("Passwords don't match"))
         return password2
 
     def save(self, commit=True):
@@ -69,13 +70,13 @@ class LoginForm(forms.Form):
 
         if phone[0] != '0':
             raise ValidationError(
-                'Phone Number should start with 0',
+                _('Phone Number should start with 0'),
                 code='start_with_0'
             )
 
         elif len(phone) != 11:
             raise ValidationError(
-                'Phone Number should be 11 numbers',
+                _('Phone Number should be 11 numbers'),
                 code='len_phone'
             )
 
