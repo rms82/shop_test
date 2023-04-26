@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-23 18:12+0430\n"
+"POT-Creation-Date: 2023-04-26 23:59+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,22 +18,51 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: .\accounts\check_code.html:6
+msgid "Check Code"
+msgstr "بررسی کد"
+
+#: .\accounts\check_code.html:16 .\accounts\login.html:16
+#: .\accounts\register.html:16
+msgid "Home"
+msgstr "خانه"
+
+#: .\accounts\check_code.html:27
+msgid "Check code"
+msgstr "بررسی کد"
+
+#: .\accounts\check_code.html:49
+msgid "Your varify code"
+msgstr "کد اعتبار سنجی شما"
+
+#: .\accounts\check_code.html:57 .\accounts\login.html:49
+msgid "Your Password"
+msgstr "رمز عبور"
+
+#: .\accounts\check_code.html:64
+msgid "Your Password Confirm"
+msgstr " تکرار رمز عبور"
+
+#: .\accounts\check_code.html:70 .\accounts\register.html:50
+msgid "Send"
+msgstr "ارسال"
+
 #: .\accounts\login.html:6 .\accounts\login.html:28
 msgid "Login Page"
 msgstr "صفحه ورود"
-
-#: .\accounts\login.html:16
-msgid "Home"
-msgstr "خانه"
 
 #: .\accounts\login.html:17 .\accounts\login.html:56
 msgid "Login"
 msgstr "ورود"
 
-#: .\accounts\login.html:42
+#: .\accounts\login.html:42 .\accounts\register.html:44
 msgid "Your Phone"
 msgstr "شماره تلفن"
 
-#: .\accounts\login.html:49
-msgid "Your Password"
-msgstr "رمز عبور"
+#: .\accounts\register.html:6 .\accounts\register.html:28
+msgid "Register Page"
+msgstr "صفحه ثبت نام"
+
+#: .\accounts\register.html:17
+msgid "Register"
+msgstr "ثبت نام"

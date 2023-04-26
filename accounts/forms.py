@@ -3,6 +3,7 @@ from django.contrib.auth import get_user_model
 from django import forms
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.core.exceptions import ValidationError
+from django.core import validators
 from django.utils.translation import gettext_lazy as _
 
 
@@ -18,6 +19,43 @@ from django.utils.translation import gettext_lazy as _
 #         fields = ['email', 'fullname']
 
 
+# Validators
+def valid_phone(phone):
+    if phone[0] != '0':
+        raise ValidationError(
+            _('Phone Number should start with 0'),
+            code='start_with_0'
+        )
+
+    elif len(phone) != 11:
+        raise ValidationError(
+            _('Phone Number should be 11 numbers'),
+            code='len_phone'
+        )
+
+    elif not phone.isnumeric():
+        raise ValidationError(
+            _('Phone Number must be all numbers')
+        )
+
+    return phone
+
+
+def valid_password(password):
+    if len(password) <= 6:
+        raise ValidationError(
+            _('Password must be  more than 6 character'),
+            code='len_password'
+        )
+    elif password.isnumeric():
+        raise ValidationError(
+            _('Password must not be all numbers')
+        )
+
+    return password
+
+
+# forms
 class CustomUserCreationForm(forms.ModelForm):
     """A form for creating new users. Includes all the required
     fields, plus a repeated password."""
@@ -62,22 +100,28 @@ class CustomUserChangeForm(forms.ModelForm):
 
 
 class LoginForm(forms.Form):
-    phone = forms.CharField(widget=forms.TextInput())
+    phone = forms.CharField(widget=forms.TextInput(), validators=[valid_phone])
     password = forms.CharField(widget=forms.PasswordInput())
 
-    def clean_phone(self):
-        phone = self.cleaned_data.get('phone')
 
-        if phone[0] != '0':
+class RegisterForm(forms.Form):
+    phone = forms.CharField(widget=forms.TextInput(), validators=[valid_phone])
+
+
+class OTPForm(forms.Form):
+    code = forms.CharField(widget=forms.TextInput(), validators=[validators.MaxLengthValidator(4)])
+    password = forms.CharField(widget=forms.PasswordInput(), validators=[valid_password])
+    password2 = forms.CharField(widget=forms.PasswordInput())
+
+    def clean_password2(self):
+        cd = self.cleaned_data
+        password1 = cd.get('password')
+        password2 = cd.get('password2')
+
+        if password1 != password2:
             raise ValidationError(
-                _('Phone Number should start with 0'),
-                code='start_with_0'
+                _('Passwords doesnt match!!'),
+                code='password_match'
             )
 
-        elif len(phone) != 11:
-            raise ValidationError(
-                _('Phone Number should be 11 numbers'),
-                code='len_phone'
-            )
-
-        return phone
+        return password2

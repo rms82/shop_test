@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-23 18:11+0430\n"
-"PO-Revision-Date: 2023-04-23 19:33+0330\n"
-"Last-Translator: Anonymous User <anonymous@user.tld>\n"
+"POT-Creation-Date: 2023-04-26 20:08+0430\n"
+"PO-Revision-Date: 2023-04-26 23:52+0330\n"
+"Last-Translator: Anonymous User <None>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,26 +19,46 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\accounts\forms.py:39
-msgid "Passwords don't match"
-msgstr "رمز عبور ها یکسان نیستند"
-
-#: .\accounts\forms.py:73
+#: .\forms.py:26
 msgid "Phone Number should start with 0"
 msgstr "شماره تلفن باید با 0 شروع شود"
 
-#: .\accounts\forms.py:79
+#: .\forms.py:32
 msgid "Phone Number should be 11 numbers"
 msgstr "شماره تلفن باید 11 کاراکتر باشد"
 
-#: .\accounts\models.py:38
+#: .\forms.py:38
+msgid "Phone Number must be all numbers"
+msgstr "شماره تلفن باید تماما از اعداد باشد"
+
+#: .\forms.py:47
+msgid "Password must be  more than 6 character"
+msgstr "رمز عبور باید از 6 کاراکتر بیشتر باشد"
+
+#: .\forms.py:52
+msgid "Password must not be all numbers"
+msgstr "رمز عبور تباید تنها دارای عدد باشد"
+
+#: .\forms.py:77
+msgid "Passwords don't match"
+msgstr "رمز عبور ها یکسان نیستند"
+
+#: .\forms.py:123
+msgid "Passwords don't match!!"
+msgstr "رمز عبور ها یکسان نیستند"
+
+#: .\models.py:38
 msgid "Phone Number"
 msgstr "شماره تلفن"
 
-#: .\accounts\models.py:40
+#: .\models.py:40
 msgid "email address"
 msgstr "ادرس ایمیل"
 
-#: .\accounts\views.py:29
+#: .\views.py:33
 msgid "Wrong phone number or password!"
-msgstr "شماره تلفن یا رمز عبور اشتباه است!"
+msgstr "!شماره تلفن یا رمز عبور اشتباه است"
+
+#: .\views.py:53
+msgid "User with this number already exists!!"
+msgstr "!جساب کاربری با این شماره از قبل وجود دارد"

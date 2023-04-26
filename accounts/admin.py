@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import Group
 
-from .models import CustomUser
+from .models import CustomUser, OTP
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 
 
@@ -39,8 +39,13 @@ class CustomUserAdmin(UserAdmin):
     filter_horizontal = []
 
 
+class OTPAdmin(admin.ModelAdmin):
+    list_display = ['phone', 'otp']
+
+
 # Now register the new UserAdmin...
 admin.site.register(CustomUser, CustomUserAdmin)
+admin.site.register(OTP, OTPAdmin)
 # ... and, since we're not using Django's built-in permissions,
 # unregister the Group model from admin.
 admin.site.unregister(Group)

@@ -31,6 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Font Farsi
+    'admin_persian',
+
+    # Django Apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +45,9 @@ INSTALLED_APPS = [
     # My Apps
     'home',
     'accounts',
+
+    # Third Party Apps
+    'rosetta'
 
 ]
 
@@ -136,4 +143,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # User Model
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+# Rosetta
+ROSETTA_ACCESS_CONTROL_FUNCTION = "accounts.models.has_rosetta_access"
 

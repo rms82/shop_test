@@ -71,3 +71,18 @@ class CustomUser(AbstractBaseUser):
         "Is the user a member of staff?"
         # Simplest possible answer: All admins are staff
         return self.is_admin
+
+
+def has_rosetta_access(user):
+    return True
+
+
+class OTP(models.Model):
+    token = models.CharField(max_length=10)
+    otp = models.SmallIntegerField()
+    phone = models.CharField(max_length=11)
+
+    datetime_created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.phone

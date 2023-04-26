@@ -1,0 +1,60 @@
+{% extends '_base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+    {% trans 'Register Page' %}
+{% endblock %}
+
+{% block main %}
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="/">{% trans 'Home' %}</a>
+                    <span class="breadcrumb-item active">{% trans 'Register' %}</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid">
+        <h2 class="section-title position-relative text-uppercase text-center mx-xl-5 mb-4"><span
+                class="bg-secondary pr-3">{% trans 'Register Page' %}</span></h2>
+        <div class=" px-xl-5">
+            <div class=" mb-5 contact-us" style="">
+                <div class="contact-form bg-light p-30">
+                    <div id="success"></div>
+                    <form method="POST">
+                        {% csrf_token %}
+
+                        <div class="control-group">
+                            {#                           django #}
+                            {% for error in form.phone.errors %}
+                                <p class="alert alert-danger">{{ error }}</p>
+                            {% endfor %}
+
+
+                            <input type="text" class="form-control" id="phone" name="phone"
+                                   placeholder="{% trans 'Your Phone' %}"
+                                   required="required" data-validation-required-message="Please enter your Phone"/>
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-primary py-2 px-4" type="submit">{% trans 'Send' %}</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Contact End -->
+
+{% endblock %}

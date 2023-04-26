@@ -1,0 +1,80 @@
+{% extends '_base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+    {% trans 'Check Code' %}
+{% endblock %}
+
+{% block main %}
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="/">{% trans 'Home' %}</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid">
+        <h2 class="section-title position-relative text-uppercase text-center mx-xl-5 mb-4"><span
+                class="bg-secondary pr-3">{% trans 'Check code' %}</span></h2>
+        <div class=" px-xl-5">
+            <div class=" mb-5 contact-us" style="">
+                <div class="contact-form bg-light p-30">
+                    <div id="success"></div>
+                    <form method="POST">
+                        {% csrf_token %}
+
+                        <div class="control-group">
+                            {% for error in form.code.errors %}
+                                <p class="alert alert-danger">{{ error }}</p>
+                            {% endfor %}
+
+                            {% for error in form.password.errors %}
+                                <p class="alert alert-danger">{{ error }}</p>
+                            {% endfor %}
+
+                            {% for error in form.password2.errors %}
+                                <p class="alert alert-danger">{{ error }}</p>
+                            {% endfor %}
+
+                            <input type="text" class="form-control" id="code" name="code"
+                                   placeholder="{% trans 'Your varify code' %}"
+                                   required="required"
+                                   data-validation-required-message="Please enter your varify code"/>
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="control-group">
+                            <input type="password" class="form-control" id="password" name="password"
+                                   placeholder="{% trans 'Your Password' %}"
+                                   required="required" data-validation-required-message="Please enter your Password"/>
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="control-group">
+                            <input type="password" class="form-control" id="password2" name="password2"
+                                   placeholder="{% trans 'Your Password Confirm' %}"
+                                   required="required" data-validation-required-message="Please enter your Password"/>
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-primary py-2 px-4" type="submit">{% trans 'Send' %}</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Contact End -->
+
+{% endblock %}
