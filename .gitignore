@@ -137,3 +137,5 @@ GitHub.sublime-settings
 .history
 
 .idea/
+00*.py
+front_end/

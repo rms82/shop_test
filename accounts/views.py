@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth import login, authenticate, get_user_model
+from django.contrib.auth import login, authenticate, get_user_model, logout
 from django.views.generic import CreateView, TemplateView, View
 from django.urls import reverse_lazy
 from django.utils.translation import gettext as _
@@ -58,8 +58,8 @@ class SignUpView(View):
                 token = get_random_string(10)
 
                 SMS = ghasedakpack.Ghasedak("55fb92ff6575008a7ce1e94355fecacc1aba3bfcfe8939e54cf7adb49bcdd0af")
-                SMS.verification(
-                    {'receptor': phone, 'type': '1', 'template': 'testshop', 'param1': code})
+                # SMS.verification(
+                #     {'receptor': phone, 'type': '1', 'template': 'testshop', 'param1': code})
 
                 OTP.objects.create(phone=phone, otp=code, token=token)
                 return redirect('checkcode', token=token)
@@ -78,7 +78,6 @@ class CheckCodeView(View):
             'form': form
         })
 
-    # problem
     def post(self, request, token):
         form = OTPForm(request.POST)
         if form.is_valid():
@@ -91,3 +90,11 @@ class CheckCodeView(View):
         return render(request, 'accounts/check_code.html', {
             'form': form,
         })
+
+
+class LogoutView(View):
+    def get(self, request):
+        if request.user.is_authenticated:
+            logout(request)
+
+        return redirect('home')
