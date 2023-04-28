@@ -1,11 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth import login, authenticate, get_user_model, logout
-from django.views.generic import CreateView, TemplateView, View
-from django.urls import reverse_lazy
+from django.contrib.auth import login, authenticate, logout
+from django.views.generic import View
 from django.utils.translation import gettext as _
 from django.utils.crypto import get_random_string
 from .models import OTP, CustomUser
-from .forms import CustomUserCreationForm, LoginForm, RegisterForm, OTPForm
+from .forms import LoginForm, RegisterForm, OTPForm
 import ghasedakpack
 from random import randint
 

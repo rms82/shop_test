@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-28 21:22+0430\n"
+"PO-Revision-Date: 2023-04-28 21:23+0330\n"
+"Last-Translator: Anonymous User <None>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\models.py:8 .\models.py:11 .\models.py:41
+msgid "size"
+msgstr "سایز"
+
+#: .\models.py:9
+msgid "sizes"
+msgstr "سایز ها"
+
+#: .\models.py:19 .\models.py:22 .\models.py:40
+msgid "color"
+msgstr "رنگ"
+
+#: .\models.py:20
+msgid "colors"
+msgstr "رنگ ها"
+
+#: .\models.py:30
+msgid "product"
+msgstr "محصول"
+
+#: .\models.py:31
+msgid "products"
+msgstr "محصولات"
+
+#: .\models.py:33
+msgid "title"
+msgstr "عنوان"
+
+#: .\models.py:34
+msgid "description"
+msgstr "توضیحات"
+
+#: .\models.py:36
+msgid "price"
+msgstr "قیمت"
+
+#: .\models.py:37
+msgid "off"
+msgstr "درصد تخفیف"
+
+#: .\models.py:39
+msgid "image"
+msgstr "عکس"

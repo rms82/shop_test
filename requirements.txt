@@ -4,3 +4,4 @@ sqlparse==0.4.4
 tzdata==2023.3
 ghasedakpack~=0.1.13
 django-admin-persian-fonts==0.2
+pillow
