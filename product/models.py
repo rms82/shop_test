@@ -37,8 +37,8 @@ class Product(models.Model):
     off = models.SmallIntegerField(verbose_name=_('off'))
 
     image = models.ImageField(upload_to='products/', verbose_name=_('image'))
-    color = models.ManyToManyField(Color, verbose_name=_('color'))
-    size = models.ManyToManyField(Size, verbose_name=_('size'))
+    color = models.ManyToManyField(Color, verbose_name=_('color'), blank=True)
+    size = models.ManyToManyField(Size, verbose_name=_('size'),blank=True)
 
     def __str__(self):
         return self.title
