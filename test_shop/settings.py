@@ -122,6 +122,7 @@ LANGUAGES = (
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'templates/locale'),
     os.path.join(BASE_DIR, 'templates/accounts/locale'),
+    os.path.join(BASE_DIR, 'templates/product/locale'),
 ]
 
 TIME_ZONE = 'Asia/Tehran'
