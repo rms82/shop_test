@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-26 20:08+0430\n"
-"PO-Revision-Date: 2023-04-26 23:52+0330\n"
+"POT-Creation-Date: 2023-04-30 22:13+0430\n"
+"PO-Revision-Date: 2023-04-30 22:13+0330\n"
 "Last-Translator: Anonymous User <None>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,6 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\apps.py:8
+msgid "accounts"
+msgstr "حساب ها"
 
 #: .\forms.py:26
 msgid "Phone Number should start with 0"
@@ -44,21 +48,37 @@ msgid "Passwords don't match"
 msgstr "رمز عبور ها یکسان نیستند"
 
 #: .\forms.py:123
-msgid "Passwords don't match!!"
+msgid "Passwords doesnt match!!"
 msgstr "رمز عبور ها یکسان نیستند"
 
-#: .\models.py:38
+#: .\models.py:39
+msgid "CustomUser"
+msgstr "کاربر "
+
+#: .\models.py:40
+msgid "CustomUsers"
+msgstr "کاربرها"
+
+#: .\models.py:42
 msgid "Phone Number"
 msgstr "شماره تلفن"
 
-#: .\models.py:40
+#: .\models.py:44
 msgid "email address"
 msgstr "ادرس ایمیل"
 
-#: .\views.py:33
+#: .\models.py:86
+msgid "OTP"
+msgstr "رمز  یکبار مصرف"
+
+#: .\models.py:87
+msgid "OTPS"
+msgstr "رمز های یکبار مصرف"
+
+#: .\views.py:32
 msgid "Wrong phone number or password!"
 msgstr "!شماره تلفن یا رمز عبور اشتباه است"
 
-#: .\views.py:53
+#: .\views.py:52
 msgid "User with this number already exists!!"
 msgstr "!جساب کاربری با این شماره از قبل وجود دارد"

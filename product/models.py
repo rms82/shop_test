@@ -34,7 +34,7 @@ class Product(models.Model):
     description = models.TextField(verbose_name=_('description'))
 
     price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name=_('price'))
-    off = models.SmallIntegerField(verbose_name=_('off'))
+    off = models.SmallIntegerField(verbose_name=_('off'), null=True, blank=True)
 
     image = models.ImageField(upload_to='products/', verbose_name=_('image'))
     color = models.ManyToManyField(Color, verbose_name=_('color'), blank=True)

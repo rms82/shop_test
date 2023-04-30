@@ -35,6 +35,10 @@ class CustomUserManager(BaseUserManager):
 
 # Create your user model here.
 class CustomUser(AbstractBaseUser):
+    class Meta:
+        verbose_name = _('CustomUser')
+        verbose_name_plural = _('CustomUsers')
+
     phone = models.CharField(max_length=12, unique=True, verbose_name=_('Phone Number'))
     email = models.EmailField(
         verbose_name=_("email address"),
@@ -78,6 +82,10 @@ def has_rosetta_access(user):
 
 
 class OTP(models.Model):
+    class Meta:
+        verbose_name = _('OTP')
+        verbose_name_plural = _('OTPS')
+
     token = models.CharField(max_length=10)
     otp = models.SmallIntegerField()
     phone = models.CharField(max_length=11)
