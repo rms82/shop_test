@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-28 21:22+0430\n"
-"PO-Revision-Date: 2023-04-28 21:23+0330\n"
+"POT-Creation-Date: 2023-05-01 23:05+0430\n"
+"PO-Revision-Date: 2023-05-01 23:05+0330\n"
 "Last-Translator: Anonymous User <None>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,6 +18,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\admin.py:8 .\admin.py:51
+msgid "Price"
+msgstr "قیمت"
+
+#: .\admin.py:13
+msgid "Cheap"
+msgstr "ارزان"
+
+#: .\admin.py:14
+msgid "expensive"
+msgstr "گران"
+
+#: .\admin.py:43 .\models.py:34
+msgid "description"
+msgstr "توضیحات"
+
+#: .\admin.py:48
+msgid "Product detail"
+msgstr "جزییات محصول"
+
+#: .\admin.py:54
+msgid "Info"
+msgstr "اطلاعات"
+
+#: .\apps.py:8 .\models.py:31
+msgid "products"
+msgstr "محصولات"
 
 #: .\models.py:8 .\models.py:11 .\models.py:41
 msgid "size"
@@ -39,17 +67,9 @@ msgstr "رنگ ها"
 msgid "product"
 msgstr "محصول"
 
-#: .\models.py:31
-msgid "products"
-msgstr "محصولات"
-
 #: .\models.py:33
 msgid "title"
 msgstr "عنوان"
-
-#: .\models.py:34
-msgid "description"
-msgstr "توضیحات"
 
 #: .\models.py:36
 msgid "price"
