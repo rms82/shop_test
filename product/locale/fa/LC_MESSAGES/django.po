@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-01 23:05+0430\n"
-"PO-Revision-Date: 2023-05-01 23:05+0330\n"
+"POT-Creation-Date: 2023-05-03 01:05+0430\n"
+"PO-Revision-Date: 2023-05-03 01:06+0330\n"
 "Last-Translator: Anonymous User <None>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\admin.py:8 .\admin.py:51
+#: .\admin.py:8 .\admin.py:57
 msgid "Price"
 msgstr "قیمت"
 
@@ -31,15 +31,15 @@ msgstr "ارزان"
 msgid "expensive"
 msgstr "گران"
 
-#: .\admin.py:43 .\models.py:34
+#: .\admin.py:49 .\models.py:34
 msgid "description"
 msgstr "توضیحات"
 
-#: .\admin.py:48
+#: .\admin.py:54
 msgid "Product detail"
 msgstr "جزییات محصول"
 
-#: .\admin.py:54
+#: .\admin.py:60
 msgid "Info"
 msgstr "اطلاعات"
 
@@ -47,7 +47,7 @@ msgstr "اطلاعات"
 msgid "products"
 msgstr "محصولات"
 
-#: .\models.py:8 .\models.py:11 .\models.py:41
+#: .\models.py:8 .\models.py:11 .\models.py:42
 msgid "size"
 msgstr "سایز"
 
@@ -55,7 +55,7 @@ msgstr "سایز"
 msgid "sizes"
 msgstr "سایز ها"
 
-#: .\models.py:19 .\models.py:22 .\models.py:40
+#: .\models.py:19 .\models.py:22 .\models.py:41
 msgid "color"
 msgstr "رنگ"
 
@@ -63,11 +63,11 @@ msgstr "رنگ"
 msgid "colors"
 msgstr "رنگ ها"
 
-#: .\models.py:30
+#: .\models.py:30 .\models.py:54
 msgid "product"
 msgstr "محصول"
 
-#: .\models.py:33
+#: .\models.py:33 .\models.py:53
 msgid "title"
 msgstr "عنوان"
 
@@ -79,6 +79,18 @@ msgstr "قیمت"
 msgid "off"
 msgstr "درصد تخفیف"
 
-#: .\models.py:39
+#: .\models.py:38
+msgid "off should less than 60%."
+msgstr "درصد تخفیف باید کمتر از 60 درصد باشد."
+
+#: .\models.py:40
 msgid "image"
 msgstr "عکس"
+
+#: .\models.py:50
+msgid "Product Feature"
+msgstr "ویژگی محصول"
+
+#: .\models.py:51
+msgid "Product Features"
+msgstr "ویژگی های محصول"

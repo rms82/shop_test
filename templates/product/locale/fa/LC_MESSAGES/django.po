@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-29 22:25+0430\n"
-"PO-Revision-Date: 2023-04-29 22:28+0330\n"
+"POT-Creation-Date: 2023-05-06 21:17+0430\n"
+"PO-Revision-Date: 2023-05-06 21:18+0330\n"
 "Last-Translator: Anonymous User <None>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -38,3 +38,25 @@ msgstr "رنگ"
 #: .\product_detail.html:91
 msgid " Add To Cart"
 msgstr "اضافه به سبد خرید"
+
+#: .\product_detail.html:102
+#| msgid "Product Description"
+msgid "Description"
+msgstr "توضیحات"
+
+#: .\product_detail.html:103
+#| msgid "Additional Information"
+msgid "Information"
+msgstr "اطلاعات "
+
+#: .\product_detail.html:104
+msgid "Reviews"
+msgstr "نظرات"
+
+#: .\product_detail.html:108
+msgid "Product Description"
+msgstr "توضیحات محصول"
+
+#: .\product_detail.html:112
+msgid "Additional Information"
+msgstr "اطلاعات اضافه"

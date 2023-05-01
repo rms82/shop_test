@@ -114,6 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # Translate
 LANGUAGE_CODE = 'fa-ir'
+# LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
     ('en', _('English')),
     ('fa', _('Persian')),

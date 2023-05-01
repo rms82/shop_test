@@ -23,6 +23,11 @@ class PriceFilter(admin.SimpleListFilter):
 
 
 # Register your models here.
+class FeatureInline(admin.TabularInline):
+    model = models.ProductFeature
+    extra = 2
+
+
 @admin.register(models.Product)
 class ProductAdmin(admin.ModelAdmin):
     # Product List in Admin
@@ -50,13 +55,19 @@ class ProductAdmin(admin.ModelAdmin):
             'fields': ('pk', 'title', 'description', 'image')
         }),
         (_('Price'), {
-            'fields': ('price', 'off', )
+            'fields': ('price', 'off',)
         }),
         (_('Info'), {
             'fields': ('color', 'size',)
         }),
     )
+    inlines = [FeatureInline]
     save_on_top = True
+
+
+@admin.register(models.ProductFeature)
+class ProductFeatureAdmin(admin.ModelAdmin):
+    list_display = ['title']
 
 
 admin.site.register(models.Color)
