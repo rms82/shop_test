@@ -32,11 +32,16 @@
                     <h3>{{ product.title }}</h3>
                     <h3 class="font-weight-semi-bold mb-4">{% trans '$' %}{{ product.price }}</h3>
                     <p class="mb-4">{{ product.description }}</p>
-                    <div class="d-flex mb-3">
-                        {% if product.size.all %}
 
-                            <strong class="text-dark mr-3">{% trans 'Sizes:' %}</strong>
-                            <form>
+                    <form method="post" action="{% url 'cart_add' %}">
+                        {% csrf_token %}
+                        <div class="d-flex mb-3">
+
+                            {#Django #}
+                            {% if product.size.all %}
+
+                                <strong class="text-dark mr-3">{% trans 'Sizes:' %}</strong>
+
                                 {% for size in product.size.all %}
 
                                     <div class="custom-control custom-radio custom-control-inline">
@@ -47,17 +52,18 @@
                                     </div>
 
                                 {% endfor %}
-                            </form>
-                        {% endif %}
 
-                    </div>
-                    <div class="d-flex mb-4">
+                            {% endif %}
 
-                        {% if product.color.all %}
-                            <strong class="text-dark mr-3">{% trans 'Colors:' %}</strong>
-                            <form>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            {#                        Django #}
+                            {% if product.color.all %}
+                                <strong class="text-dark mr-3">{% trans 'Colors:' %}</strong>
 
 
+                                {#Django#}
                                 {% for color in product.color.all %}
 
                                     <div class="custom-control custom-radio custom-control-inline">
@@ -69,28 +75,31 @@
 
                                 {% endfor %}
 
-                            </form>
-                        {% endif %}
 
-                    </div>
-                    <div class="d-flex align-items-center mb-4 pt-2">
-                        <div class="input-group quantity mr-3" style="width: 130px;">
-                            <div class="input-group-btn">
-                                <button class="btn btn-primary btn-minus">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                            <input type="text" class="form-control bg-secondary border-0 text-center" value="1">
-                            <div class="input-group-btn">
-                                <button class="btn btn-primary btn-plus">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
+                            {% endif %}
+
                         </div>
-                        <button class="btn btn-primary px-3"><i
-                                class="fa fa-shopping-cart mr-1"></i>{% trans ' Add To Cart' %}
-                        </button>
-                    </div>
+
+                        <div class="d-flex align-items-center mb-4 pt-2">
+                            <div class="input-group quantity mr-3" style="width: 130px;">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-minus">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="form-control bg-secondary border-0 text-center" value="1">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-plus">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary px-3"><i
+                                    class="fa fa-shopping-cart mr-1"></i>{% trans ' Add To Cart' %}
+                            </button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>
@@ -100,8 +109,10 @@
                     <div class="nav nav-tabs mb-4">
                         <a class="nav-item nav-link text-dark active" data-toggle="tab"
                            href="#tab-pane-1">{% trans 'Description' %}</a>
-                        <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2">{% trans 'Information' %}</a>
-                        <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-3">{% trans 'Reviews' %} (0)</a>
+                        <a class="nav-item nav-link text-dark" data-toggle="tab"
+                           href="#tab-pane-2">{% trans 'Information' %}</a>
+                        <a class="nav-item nav-link text-dark" data-toggle="tab"
+                           href="#tab-pane-3">{% trans 'Reviews' %} (0)</a>
                     </div>
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="tab-pane-1">
