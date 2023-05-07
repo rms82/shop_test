@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'home',
     'accounts',
     'product',
+    'cart',
 
     # Third Party Apps
     'rosetta'
@@ -124,6 +125,8 @@ LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'templates/locale'),
     os.path.join(BASE_DIR, 'templates/accounts/locale'),
     os.path.join(BASE_DIR, 'templates/product/locale'),
+    os.path.join(BASE_DIR, 'templates/cart/locale'),
+
 ]
 
 TIME_ZONE = 'Asia/Tehran'

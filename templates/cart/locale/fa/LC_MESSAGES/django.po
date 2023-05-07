@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-07 19:03+0430\n"
+"PO-Revision-Date: 2023-05-07 19:03+0330\n"
+"Last-Translator: Anonymous User <None>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\cart_detail.html:6
+msgid "Cart Detail"
+msgstr "جزییات سبد خرید"
+
+#: .\cart_detail.html:18
+msgid "Home"
+msgstr "خانه"
+
+#: .\cart_detail.html:19
+msgid "Shop"
+msgstr "فروشگاه"
+
+#: .\cart_detail.html:20
+msgid "Shopping Cart"
+msgstr "سبد خرید"
+
+#: .\cart_detail.html:35
+msgid "Image"
+msgstr "تصویر"
+
+#: .\cart_detail.html:36
+msgid "Products"
+msgstr "محصولات"
+
+#: .\cart_detail.html:37
+msgid "Price"
+msgstr "قیمت"
+
+#: .\cart_detail.html:38
+msgid "Quantity"
+msgstr "تعداد"
+
+#: .\cart_detail.html:39 .\cart_detail.html:100
+msgid "Total"
+msgstr "مجموع"
+
+#: .\cart_detail.html:40
+msgid "Remove"
+msgstr "حذف"
+
+#: .\cart_detail.html:79
+msgid "Coupon Code"
+msgstr "کد تخفیف"
+
+#: .\cart_detail.html:81
+msgid "Apply Coupon"
+msgstr "اعمال کد"
+
+#: .\cart_detail.html:85
+msgid "Cart Summary"
+msgstr "خلاصه سبدخرید"
+
+#: .\cart_detail.html:90
+msgid "Subtotal"
+msgstr "هزینه کالا ها"
+
+#: .\cart_detail.html:94
+msgid "Shipping"
+msgstr "هزینه ارسال"
+
+#: .\cart_detail.html:103
+msgid "Proceed To Checkout"
+msgstr "صفحه پرداخت"
