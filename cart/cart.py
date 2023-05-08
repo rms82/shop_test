@@ -33,10 +33,15 @@ class Cart:
 
         if unique_id not in self.cart:
             self.cart[unique_id] = {'quantity': 0, 'price': str(product.price), 'id': str(product.id), 'size': size,
-                                    'color': color}
+                                    'color': color, 'unique_id': unique_id}
         self.cart[unique_id]['quantity'] += int(quantity)
 
         self.save()
+
+    def delete_item(self, unique_id):
+        if unique_id in self.cart:
+            del self.cart[unique_id]
+            self.save()
 
     def save(self):
         self.session.modified = True

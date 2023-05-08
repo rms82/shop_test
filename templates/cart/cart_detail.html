@@ -60,7 +60,7 @@
                             </td>
                             <td class="align-middle">${{ item.total }}</td>
                             <td class="align-middle">
-                                <button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button>
+                                <a class="btn btn-sm btn-danger" href="{% url 'cart_delete' item.unique_id %}"><i class="fa fa-times"> </i></a>
                             </td>
                         </tr>
 
