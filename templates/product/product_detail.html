@@ -33,7 +33,7 @@
                     <h3 class="font-weight-semi-bold mb-4">{% trans '$' %}{{ product.price }}</h3>
                     <p class="mb-4">{{ product.description }}</p>
 
-                    <form method="post" action="{% url 'cart_add' %}">
+                    <form method="post" action="{% url 'cart_add' product.pk %}">
                         {% csrf_token %}
                         <div class="d-flex mb-3">
 
@@ -46,7 +46,7 @@
 
                                     <div class="custom-control custom-radio custom-control-inline">
                                         <input type="radio" class="custom-control-input" id="size-{{ size.pk }}"
-                                               name="size">
+                                               name="size" value="{{ size.size }}">
                                         <label class="custom-control-label"
                                                for="size-{{ size.pk }}">{{ size.size }}</label>
                                     </div>
@@ -68,7 +68,7 @@
 
                                     <div class="custom-control custom-radio custom-control-inline">
                                         <input type="radio" class="custom-control-input" id="color-{{ color.pk }}"
-                                               name="color">
+                                               name="color" value="{{ color.color }}">
                                         <label class="custom-control-label"
                                                for="color-{{ color.pk }}">{{ color.color }}</label>
                                     </div>
@@ -87,7 +87,7 @@
                                         <i class="fa fa-minus"></i>
                                     </button>
                                 </div>
-                                <input type="text" class="form-control bg-secondary border-0 text-center" value="1">
+                                <input type="text" class="form-control bg-secondary border-0 text-center" value="1" name="quantity">
                                 <div class="input-group-btn">
                                     <button type="button" class="btn btn-primary btn-plus">
                                         <i class="fa fa-plus"></i>

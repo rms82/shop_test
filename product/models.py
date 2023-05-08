@@ -33,7 +33,7 @@ class Product(models.Model):
     title = models.CharField(max_length=128, verbose_name=_('title'))
     description = models.TextField(verbose_name=_('description'))
 
-    price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name=_('price'))
+    price = models.IntegerField(verbose_name=_('price'))
     off = models.SmallIntegerField(verbose_name=_('off'), null=True, blank=True,
                                    help_text=_("off should less than 60%."))
 
