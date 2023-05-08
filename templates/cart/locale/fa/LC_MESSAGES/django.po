@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-07 19:03+0430\n"
-"PO-Revision-Date: 2023-05-07 19:03+0330\n"
-"Last-Translator: Anonymous User <None>\n"
+"POT-Creation-Date: 2023-05-08 21:59+0430\n"
+"PO-Revision-Date: 2023-05-08 22:00+0330\n"
+"Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -48,37 +48,45 @@ msgid "Price"
 msgstr "قیمت"
 
 #: .\cart_detail.html:38
+msgid "Size"
+msgstr "سایز"
+
+#: .\cart_detail.html:39
+msgid "Color"
+msgstr "رنگ"
+
+#: .\cart_detail.html:40
 msgid "Quantity"
 msgstr "تعداد"
 
-#: .\cart_detail.html:39 .\cart_detail.html:100
+#: .\cart_detail.html:41 .\cart_detail.html:99
 msgid "Total"
 msgstr "مجموع"
 
-#: .\cart_detail.html:40
+#: .\cart_detail.html:42
 msgid "Remove"
 msgstr "حذف"
 
-#: .\cart_detail.html:79
+#: .\cart_detail.html:77
 msgid "Coupon Code"
 msgstr "کد تخفیف"
 
-#: .\cart_detail.html:81
+#: .\cart_detail.html:79
 msgid "Apply Coupon"
 msgstr "اعمال کد"
 
-#: .\cart_detail.html:85
+#: .\cart_detail.html:84
 msgid "Cart Summary"
 msgstr "خلاصه سبدخرید"
 
-#: .\cart_detail.html:90
+#: .\cart_detail.html:89
 msgid "Subtotal"
 msgstr "هزینه کالا ها"
 
-#: .\cart_detail.html:94
+#: .\cart_detail.html:93
 msgid "Shipping"
 msgstr "هزینه ارسال"
 
-#: .\cart_detail.html:103
+#: .\cart_detail.html:102
 msgid "Proceed To Checkout"
 msgstr "صفحه پرداخت"
