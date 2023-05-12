@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.generic import View
+from django.views.generic import View, TemplateView
 
 from cart.cart import Cart
 from product.models import Product
@@ -16,7 +16,12 @@ class CartDetailView(View):
 class AddToCartView(View):
     def post(self, request, pk):
         product = get_object_or_404(Product, pk=pk)
-        color, size, quantity = request.POST.get('color'), request.POST.get('size'), request.POST.get('quantity')
+        color, size, quantity = request.POST.get('color', 'default'), request.POST.get('size',
+                                                                                       'default'), request.POST.get(
+            'quantity', 1)
+
+        if quantity == '0':
+            quantity = 1
 
         cart = Cart(request)
         cart.add_to_cart(product, color, size, quantity)
@@ -30,3 +35,7 @@ class DeleteCartItemView(View):
         cart.delete_item(unique_id)
 
         return redirect('cart_detail')
+
+
+class CheckoutView(TemplateView):
+    template_name = 'cart/checkout.html'
