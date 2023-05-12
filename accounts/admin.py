@@ -2,11 +2,16 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import Group
 
-from .models import CustomUser, OTP
+from .models import CustomUser, OTP, Address
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 
 
 # Register your models here.
+class AddressInline(admin.StackedInline):
+    model = Address
+    extra = 0
+
+
 class CustomUserAdmin(UserAdmin):
     # The forms to add and change user instances
     form = CustomUserChangeForm
@@ -37,11 +42,16 @@ class CustomUserAdmin(UserAdmin):
     search_fields = ["email"]
     ordering = ["email"]
     filter_horizontal = []
+    inlines = [AddressInline, ]
 
 
 class OTPAdmin(admin.ModelAdmin):
     list_display = ['phone', 'otp']
 
+
+@admin.register(Address)
+class AddressAdmin(admin.ModelAdmin):
+    list_display = ['user', 'fullname', 'email']
 
 # Now register the new UserAdmin...
 admin.site.register(CustomUser, CustomUserAdmin)

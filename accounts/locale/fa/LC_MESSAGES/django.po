@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-30 22:13+0430\n"
-"PO-Revision-Date: 2023-04-30 22:13+0330\n"
+"POT-Creation-Date: 2023-05-12 22:01+0430\n"
+"PO-Revision-Date: 2023-05-12 22:02+0330\n"
 "Last-Translator: Anonymous User <None>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -74,6 +74,40 @@ msgstr "رمز  یکبار مصرف"
 #: .\models.py:87
 msgid "OTPS"
 msgstr "رمز های یکبار مصرف"
+
+#: .\models.py:101
+#| msgid "email address"
+msgid "Address"
+msgstr "ادرس"
+
+#: .\models.py:102
+msgid "Addresses"
+msgstr "ادرس ها"
+
+#: .\models.py:104
+msgid "user"
+msgstr "کاربر"
+
+#: .\models.py:105
+msgid "fullname"
+msgstr "نام کامل"
+
+#: .\models.py:106
+msgid "email"
+msgstr "ایمیل"
+
+#: .\models.py:107
+msgid "code_post"
+msgstr "کد پستی"
+
+#: .\models.py:108
+msgid "phone"
+msgstr "تلفن همراه"
+
+#: .\models.py:109
+#| msgid "email address"
+msgid "address"
+msgstr "ادرس"
 
 #: .\views.py:32
 msgid "Wrong phone number or password!"

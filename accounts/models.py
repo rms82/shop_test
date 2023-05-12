@@ -94,3 +94,19 @@ class OTP(models.Model):
 
     def __str__(self):
         return self.phone
+
+
+class Address(models.Model):
+    class Meta:
+        verbose_name = _('Address')
+        verbose_name_plural = _('Addresses')
+
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='address', verbose_name=_('user'))
+    fullname = models.CharField(max_length=50, verbose_name=_('fullname'))
+    email = models.EmailField(blank=True, null=True, verbose_name=_('email'))
+    code_post = models.CharField(max_length=12, verbose_name=_("code_post"))
+    phone = models.CharField(max_length=12, verbose_name=_("phone"))
+    address = models.TextField(verbose_name=_('address'))
+
+    def __str__(self):
+        return self.user.phone
