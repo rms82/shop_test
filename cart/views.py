@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import View, TemplateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from cart.cart import Cart
+from cart.models import Order, OrderItem
 from product.models import Product
 
 
@@ -37,3 +39,13 @@ class DeleteCartItemView(View):
         return redirect('cart_detail')
 
 
+class CreateOrderView(LoginRequiredMixin, View):
+    def get(self, request):
+        cart = Cart(request)
+        order = Order.objects.create(user=request.user)
+
+        for item in cart:
+            OrderItem.objects.create(order=order, product=item['product'], quantity=item['quantity'],
+                                     color=item['color'], size=item['size'])
+
+        return redirect('home')

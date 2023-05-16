@@ -60,7 +60,8 @@
                             </td>
                             <td class="align-middle">${{ item.total }}</td>
                             <td class="align-middle">
-                                <a class="btn btn-sm btn-danger" href="{% url 'cart_delete' item.unique_id %}"><i class="fa fa-times"> </i></a>
+                                <a class="btn btn-sm btn-danger" href="{% url 'cart_delete' item.unique_id %}"><i
+                                        class="fa fa-times"> </i></a>
                             </td>
                         </tr>
 
@@ -87,20 +88,22 @@
                     <div class="border-bottom pb-2">
                         <div class="d-flex justify-content-between mb-3">
                             <h6>{% trans 'Subtotal' %}</h6>
-                            <h6>$150</h6>
+                            <h6>${{ cart.total_cart }}</h6>
                         </div>
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-medium">{% trans 'Shipping' %}</h6>
-                            <h6 class="font-weight-medium">$10</h6>
+                            <h6 class="font-weight-medium">$0</h6>
                         </div>
                     </div>
                     <div class="pt-2">
                         <div class="d-flex justify-content-between mt-2">
                             <h5>{% trans 'Total' %}</h5>
-                            <h5>$160</h5>
+                            <h5>${{ cart.total_cart }}</h5>
                         </div>
-                        <button class="btn btn-block btn-primary font-weight-bold my-3 py-3">{% trans 'Proceed To Checkout' %}
-                        </button>
+                        <a href="{% url 'add_order' %}"
+                           class="btn btn-block btn-primary font-weight-bold my-3 py-3">
+                            {% trans 'Proceed To Checkout' %}
+                        </a>
                     </div>
                 </div>
             </div>

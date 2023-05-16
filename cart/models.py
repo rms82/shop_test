@@ -12,8 +12,11 @@ class Order(models.Model):
         verbose_name_plural = _('orders')
 
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='order', verbose_name=_("user"))
-    address = models.ForeignKey(Address, on_delete=models.PROTECT, verbose_name=_('address'))
+    address = models.ForeignKey(Address, on_delete=models.PROTECT, verbose_name=_('address'), null=True)
     is_paid = models.BooleanField(default=False, verbose_name=_('is_paid'))
+
+    def __str__(self):
+        return f'order for user: {self.user}'
 
 
 class OrderItem(models.Model):
