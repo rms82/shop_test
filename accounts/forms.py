@@ -6,6 +6,8 @@ from django.core.exceptions import ValidationError
 from django.core import validators
 from django.utils.translation import gettext_lazy as _
 
+from accounts.models import Address
+
 
 # class CustomUserCreationForm(UserCreationForm):
 #     class Meta:
@@ -125,3 +127,9 @@ class OTPForm(forms.Form):
             )
 
         return password2
+
+
+class AddressForm(forms.ModelForm):
+    class Meta:
+        model = Address
+        exclude = ('user', )

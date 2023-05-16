@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-28 16:59+0430\n"
-"PO-Revision-Date: 2023-04-28 17:01+0330\n"
+"POT-Creation-Date: 2023-05-16 17:21+0330\n"
+"PO-Revision-Date: 2023-05-16 17:21+0330\n"
 "Last-Translator: Anonymous User <None>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "About"
 msgstr "درباره ما"
 
-#: .\_base.html:41 .\_base.html:42 .\_base.html:172
+#: .\_base.html:41 .\_base.html:42 .\_base.html:175
 msgid "Contact"
 msgstr "ارتباط با ما"
 
@@ -43,42 +43,46 @@ msgstr "پروفایل"
 msgid "logout"
 msgstr "خروج از حساب"
 
-#: .\_base.html:65
+#: .\_base.html:62
+msgid "add new address"
+msgstr "اضافه کردن آدرس"
+
+#: .\_base.html:68
 msgid "Sign in"
 msgstr "ورود به حساب"
 
-#: .\_base.html:68
+#: .\_base.html:71
 msgid "Sign up"
 msgstr "ثبت نام"
 
-#: .\_base.html:99
+#: .\_base.html:102
 msgid "Search for products"
 msgstr "جستجو در محصولات"
 
-#: .\_base.html:109
+#: .\_base.html:112
 msgid "Customer Service"
 msgstr "خدمات مشتریان"
 
-#: .\_base.html:161
+#: .\_base.html:164
 msgid "Home"
 msgstr "خانه"
 
-#: .\_base.html:162
+#: .\_base.html:165
 msgid "Shop"
 msgstr "فروشگاه"
 
-#: .\_base.html:163
+#: .\_base.html:166
 msgid "Shop Detail"
 msgstr "جزییات فروشگاه"
 
-#: .\_base.html:165
+#: .\_base.html:168
 msgid "Pages"
 msgstr "صفحه ها"
 
-#: .\_base.html:168
+#: .\_base.html:171
 msgid "Shopping Cart"
 msgstr "سبد خرید"
 
-#: .\_base.html:169
+#: .\_base.html:172
 msgid "Checkout"
 msgstr "تسویه و پرداخت"
