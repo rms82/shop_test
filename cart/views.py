@@ -37,5 +37,3 @@ class DeleteCartItemView(View):
         return redirect('cart_detail')
 
 
-class CheckoutView(TemplateView):
-    template_name = 'cart/checkout.html'

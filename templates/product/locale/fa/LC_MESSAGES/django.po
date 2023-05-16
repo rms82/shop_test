@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-06 21:17+0430\n"
+"POT-Creation-Date: 2023-05-16 17:21+0330\n"
 "PO-Revision-Date: 2023-05-06 21:18+0330\n"
 "Last-Translator: Anonymous User <None>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,44 +19,42 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\product_detail.html:6
+#: .\product\product_detail.html:6
 msgid "Product Detail"
 msgstr "جزییات محصول"
 
-#: .\product_detail.html:33
+#: .\product\product_detail.html:33
 msgid "$"
 msgstr "دلار"
 
-#: .\product_detail.html:38
+#: .\product\product_detail.html:43
 msgid "Sizes:"
 msgstr "سایز"
 
-#: .\product_detail.html:57
+#: .\product\product_detail.html:63
 msgid "Colors:"
 msgstr "رنگ"
 
-#: .\product_detail.html:91
+#: .\product\product_detail.html:98
 msgid " Add To Cart"
 msgstr "اضافه به سبد خرید"
 
-#: .\product_detail.html:102
-#| msgid "Product Description"
+#: .\product\product_detail.html:111
 msgid "Description"
 msgstr "توضیحات"
 
-#: .\product_detail.html:103
-#| msgid "Additional Information"
+#: .\product\product_detail.html:113
 msgid "Information"
 msgstr "اطلاعات "
 
-#: .\product_detail.html:104
+#: .\product\product_detail.html:115
 msgid "Reviews"
 msgstr "نظرات"
 
-#: .\product_detail.html:108
+#: .\product\product_detail.html:119
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: .\product_detail.html:112
+#: .\product\product_detail.html:123
 msgid "Additional Information"
 msgstr "اطلاعات اضافه"

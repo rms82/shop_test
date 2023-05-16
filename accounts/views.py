@@ -1,12 +1,17 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import login, authenticate, logout
-from django.views.generic import View
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse
+from django.views.generic import View, CreateView
 from django.utils.translation import gettext as _
 from django.utils.crypto import get_random_string
+
 from .models import OTP, CustomUser
-from .forms import LoginForm, RegisterForm, OTPForm
-import ghasedakpack
+from .forms import LoginForm, RegisterForm, OTPForm, AddressForm
+from test_shop.settings import LOGIN_URL
+
 from random import randint
+import ghasedakpack
 
 
 # Create your views here.
@@ -97,3 +102,15 @@ class LogoutView(View):
             logout(request)
 
         return redirect('home')
+
+
+class AddressCreateView(LoginRequiredMixin, CreateView):
+    login_url = LOGIN_URL
+    form_class = AddressForm
+    template_name = 'accounts/add_address.html'
+    success_url = '/'
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        
+        return super().form_valid(form)

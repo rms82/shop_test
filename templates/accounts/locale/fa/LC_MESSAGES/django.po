@@ -8,61 +8,89 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-26 23:59+0430\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2023-05-16 17:51+0330\n"
+"PO-Revision-Date: 2023-05-16 17:52+0330\n"
+"Last-Translator: Anonymous User <None>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\accounts\check_code.html:6
+#: .\add_address.html:8
+msgid "checkout"
+msgstr ""
+
+#: .\add_address.html:18 .\add_address.html:41
+msgid "Address"
+msgstr "آدرس"
+
+#: .\add_address.html:25
+msgid "Full Name"
+msgstr "نام کامل"
+
+#: .\add_address.html:29
+msgid "Code Post"
+msgstr "کد پستی"
+
+#: .\add_address.html:33
+msgid "E-mail"
+msgstr "ایمیل"
+
+#: .\add_address.html:37
+msgid "Mobile No"
+msgstr "شماره تلفن همراه"
+
+#: .\add_address.html:46
+msgid "Create"
+msgstr "ایجاد"
+
+#: .\check_code.html:6
 msgid "Check Code"
 msgstr "بررسی کد"
 
-#: .\accounts\check_code.html:16 .\accounts\login.html:16
-#: .\accounts\register.html:16
+#: .\check_code.html:16 .\login.html:16 .\register.html:16
 msgid "Home"
 msgstr "خانه"
 
-#: .\accounts\check_code.html:27
+#: .\check_code.html:27
 msgid "Check code"
 msgstr "بررسی کد"
 
-#: .\accounts\check_code.html:49
+#: .\check_code.html:49
 msgid "Your varify code"
 msgstr "کد اعتبار سنجی شما"
 
-#: .\accounts\check_code.html:57 .\accounts\login.html:49
+#: .\check_code.html:57 .\login.html:49
 msgid "Your Password"
 msgstr "رمز عبور"
 
-#: .\accounts\check_code.html:64
+#: .\check_code.html:64
 msgid "Your Password Confirm"
 msgstr " تکرار رمز عبور"
 
-#: .\accounts\check_code.html:70 .\accounts\register.html:50
+#: .\check_code.html:70 .\register.html:50
 msgid "Send"
 msgstr "ارسال"
 
-#: .\accounts\login.html:6 .\accounts\login.html:28
+#: .\login.html:6 .\login.html:28
 msgid "Login Page"
 msgstr "صفحه ورود"
 
-#: .\accounts\login.html:17 .\accounts\login.html:56
+#: .\login.html:17 .\login.html:56
 msgid "Login"
 msgstr "ورود"
 
-#: .\accounts\login.html:42 .\accounts\register.html:44
+#: .\login.html:42 .\register.html:44
 msgid "Your Phone"
 msgstr "شماره تلفن"
 
-#: .\accounts\register.html:6 .\accounts\register.html:28
+#: .\register.html:6 .\register.html:28
 msgid "Register Page"
 msgstr "صفحه ثبت نام"
 
-#: .\accounts\register.html:17
+#: .\register.html:17
 msgid "Register"
 msgstr "ثبت نام"

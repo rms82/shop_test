@@ -4,6 +4,7 @@ charset-normalizer==3.1.0
 Django==4.2
 django-admin-persian-fonts==0.2
 django-rosetta==0.9.9
+django-widget-tweaks==1.4.12
 ghasedakpack==0.1.13
 idna==3.4
 Pillow==9.5.0

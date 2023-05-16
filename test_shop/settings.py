@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'cart',
 
     # Third Party Apps
-    'rosetta'
+    'rosetta',
+    'widget_tweaks',
 
 ]
 
@@ -157,3 +158,5 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 # Rosetta
 ROSETTA_ACCESS_CONTROL_FUNCTION = "accounts.models.has_rosetta_access"
 
+# login url
+LOGIN_URL = 'login'
