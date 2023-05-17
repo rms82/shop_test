@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     # Third Party Apps
     'rosetta',
     'widget_tweaks',
+    'rest_framework',
 
 ]
 
