@@ -15,6 +15,7 @@ class OrderAdmin(admin.ModelAdmin):
     list_display_links = ['pk', ]
     list_editable = ['is_paid', ]
     list_filter = ['is_paid', ]
+    ordering = ['pk']
     actions_on_bottom = True
     actions_on_top = False
 
