@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'rosetta',
     'widget_tweaks',
     'rest_framework',
+    'rest_framework.authtoken',
     'django_filters',
     'drf_yasg',
 
@@ -163,3 +164,12 @@ ROSETTA_ACCESS_CONTROL_FUNCTION = "accounts.models.has_rosetta_access"
 
 # login url
 LOGIN_URL = 'login'
+
+# Api rest framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}

@@ -8,5 +8,6 @@ urlpatterns = [
     path('logout/', views.LogoutView.as_view(), name='logout'),
     path('checkcode/<str:token>/', views.CheckCodeView.as_view(), name='checkcode'),
     path('add/address/', views.AddressCreateView.as_view(), name='add_address'),
+    path('api/', include('accounts.api.urls')),
     # path('login/', views.login_view, name='login')
 ]
