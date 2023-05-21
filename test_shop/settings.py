@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'rosetta',
     'widget_tweaks',
     'rest_framework',
-    'django_filters'
+    'django_filters',
+    'drf_yasg',
 
 ]
 
