@@ -1,7 +1,37 @@
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, get_user_model
+from django.contrib.auth.password_validation import validate_password
 from django.utils.translation import gettext_lazy as _
+from django.core import exceptions
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
+
+from accounts.models import CustomUser
+
+
+class UserSerializer(serializers.ModelSerializer):
+    password1 = serializers.CharField(max_length=30, write_only=True, required=True)
+
+    class Meta:
+        model = get_user_model()
+        fields = ['phone', 'password', 'password1']
+
+    def validate(self, attrs):
+        password = attrs.get('password')
+        password1 = attrs.get('password1')
+
+        if password != password1:
+            raise serializers.ValidationError(_('Passwords doesnt match!'))
+
+        try:
+            validate_password(password)
+        except exceptions.ValidationError as error:
+            raise serializers.ValidationError(list(error.messages))
+
+        return super().validate(attrs)
+
+    def create(self, validated_data):
+        validated_data.pop('password1', None)
+        return CustomUser.objects.create_user(**validated_data)
 
 
 class CustomAuthTokenSerializer(serializers.Serializer):
