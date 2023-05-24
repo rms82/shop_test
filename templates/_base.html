@@ -42,6 +42,7 @@
                 <a class="text-body mr-3" href="">{% trans 'Contact' %}</a>
                 <a class="text-body mr-3" href="">{% trans 'FAQs' %}</a>
             </div>
+            <a class="text-body mr-3" href="{% url 'change' %}">{% trans 'Change Language To Persian' %}</a>
         </div>
         <div class="col-lg-6 text-center text-lg-right">
             <div class="d-inline-flex align-items-center">
@@ -49,7 +50,7 @@
                     <button type="button" class="btn btn-sm btn-light dropdown-toggle"
                             data-toggle="dropdown">{% trans 'My Account' %}</button>
                     <div class="dropdown-menu dropdown-menu-right">
-{#                        django #}
+                        {#                        django #}
                         {% if user.is_authenticated %}
 
                             <button class="dropdown-item" type="button"><a

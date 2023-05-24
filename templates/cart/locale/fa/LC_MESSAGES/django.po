@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-16 17:21+0330\n"
+"POT-Creation-Date: 2023-05-24 18:28+0330\n"
 "PO-Revision-Date: 2023-05-08 22:00+0330\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgstr "رنگ"
 msgid "Quantity"
 msgstr "تعداد"
 
-#: .\cart\cart_detail.html:41 .\cart\cart_detail.html:99
+#: .\cart\cart_detail.html:41 .\cart\cart_detail.html:100
 msgid "Total"
 msgstr "مجموع"
 
@@ -67,30 +67,26 @@ msgstr "مجموع"
 msgid "Remove"
 msgstr "حذف"
 
-#: .\cart\cart_detail.html:77
+#: .\cart\cart_detail.html:78
 msgid "Coupon Code"
 msgstr "کد تخفیف"
 
-#: .\cart\cart_detail.html:79
+#: .\cart\cart_detail.html:80
 msgid "Apply Coupon"
 msgstr "اعمال کد"
 
-#: .\cart\cart_detail.html:84
+#: .\cart\cart_detail.html:85
 msgid "Cart Summary"
 msgstr "خلاصه سبدخرید"
 
-#: .\cart\cart_detail.html:89
+#: .\cart\cart_detail.html:90
 msgid "Subtotal"
 msgstr "هزینه کالا ها"
 
-#: .\cart\cart_detail.html:93
+#: .\cart\cart_detail.html:94
 msgid "Shipping"
 msgstr "هزینه ارسال"
 
-#: .\cart\cart_detail.html:102
+#: .\cart\cart_detail.html:105
 msgid "Proceed To Checkout"
 msgstr "صفحه پرداخت"
-
-#: .\cart\checkout.html:7
-msgid "checkout"
-msgstr ""
