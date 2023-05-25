@@ -39,7 +39,6 @@
             <div class="d-inline-flex align-items-center h-100">
                 <a class="text-body mr-3" href="">{% trans 'About' %}</a>
                 <a class="text-body mr-3" href="">{% trans 'Contact' %}</a>
-                <a class="text-body mr-3" href="">{% trans 'Contact' %}</a>
                 <a class="text-body mr-3" href="">{% trans 'FAQs' %}</a>
             </div>
             <a class="text-body mr-3" href="{% url 'change' %}">{% trans 'Change Language To Persian' %}</a>
@@ -124,7 +123,7 @@
         <div class="col-lg-3 d-none d-lg-block">
             <a class="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse"
                href="#navbar-vertical" style="height: 65px; padding: 0 30px;">
-                <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>Categories</h6>
+                <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>{% trans 'Categories' %}</h6>
                 <i class="fa fa-angle-down text-dark"></i>
             </a>
             <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light"
@@ -162,7 +161,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="{% url 'home' %}" class="nav-item nav-link active">{% trans "Home" %}</a>
+                        <a href="{% url 'home' %}" class="nav-item nav-link ">{% trans "Home" %}</a>
                         <a href="shop.html" class="nav-item nav-link">{% trans "Shop" %}</a>
                         <a href="detail.html" class="nav-item nav-link">{% trans "Shop Detail" %}</a>
                         <div class="nav-item dropdown">
@@ -205,49 +204,44 @@
 <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
     <div class="row px-xl-5 pt-5">
         <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
-            <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
-            <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor. Rebum
-                tempor no vero est magna amet no</p>
-            <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
+            <h5 class="text-secondary text-uppercase mb-4">{% trans 'Get In Touch' %}</h5>
+            <p class="mb-4">{% trans 'This is a simple shop project using Django for backend' %}</p>
+            <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>{% blocktrans %}Civil Department, Yazd University, Yazd, IRAN{% endblocktrans %}</p>
             <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
             <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
         </div>
         <div class="col-lg-8 col-md-12">
             <div class="row">
                 <div class="col-md-4 mb-5">
-                    <h5 class="text-secondary text-uppercase mb-4">Quick Shop</h5>
+                    <h5 class="text-secondary text-uppercase mb-4">{% trans 'Quick Shop' %}</h5>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
-                        <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        <a class="text-secondary mb-2" href="{% url 'home' %}"><i
+                                class="fa fa-angle-right mr-2"></i>{% trans 'Home' %}</a>
+                        <a class="text-secondary mb-2" href="#"><i
+                                class="fa fa-angle-right mr-2"></i>{% trans 'Our Shop' %}</a>
+                        <a class="text-secondary mb-2" href="#"><i
+                                class="fa fa-angle-right mr-2"></i>{% trans 'Shop Detail' %}</a>
+                        <a class="text-secondary mb-2" href="{% url 'cart_detail' %}"><i
+                                class="fa fa-angle-right mr-2"></i>{% trans 'Shopping Cart' %}</a>
+                        <a class="text-secondary mb-2" href="{% url 'add_order' %}"><i
+                                class="fa fa-angle-right mr-2"></i>{% trans 'Checkout' %}</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
-                    <h5 class="text-secondary text-uppercase mb-4">My Account</h5>
+                    <h5 class="text-secondary text-uppercase mb-4">{% trans 'My Account' %}</h5>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
-                        <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        <a class="text-secondary mb-2" href="#"><i
+                                class="fa fa-angle-right mr-2"></i>{% trans 'Profile' %}</a>
+                        <a class="text-secondary mb-2" href="{% url 'cart_detail' %}"><i
+                                class="fa fa-angle-right mr-2"></i>{% trans 'Shopping Cart' %}</a>
+                        <a class="text-secondary mb-2" href="{% url 'add_order' %}"><i
+                                class="fa fa-angle-right mr-2"></i>{% trans 'Checkout' %}</a>
+                        <a class="text-secondary" href="#"><i
+                                class="fa fa-angle-right mr-2"></i>{% trans 'Contact Us' %}</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
-                    <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
-                    <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Your Email Address">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary">Sign Up</button>
-                            </div>
-                        </div>
-                    </form>
-                    <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
+                    <h6 class="text-secondary text-uppercase mt-4 mb-3">{% trans 'Follow Us' %}</h6>
                     <div class="d-flex">
                         <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>

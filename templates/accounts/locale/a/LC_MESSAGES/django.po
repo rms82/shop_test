@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-25 21:52+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\accounts\add_address.html:8
+msgid "checkout"
+msgstr ""
+
+#: .\accounts\add_address.html:18 .\accounts\add_address.html:41
+msgid "Address"
+msgstr ""
+
+#: .\accounts\add_address.html:25
+msgid "Full Name"
+msgstr ""
+
+#: .\accounts\add_address.html:29
+msgid "Code Post"
+msgstr ""
+
+#: .\accounts\add_address.html:33
+msgid "E-mail"
+msgstr ""
+
+#: .\accounts\add_address.html:37
+msgid "Mobile No"
+msgstr ""
+
+#: .\accounts\add_address.html:46
+msgid "Create"
+msgstr ""
+
+#: .\accounts\check_code.html:6
+msgid "Check Code"
+msgstr ""
+
+#: .\accounts\check_code.html:16 .\accounts\login.html:16
+#: .\accounts\register.html:16
+msgid "Home"
+msgstr ""
+
+#: .\accounts\check_code.html:27
+msgid "Check code"
+msgstr ""
+
+#: .\accounts\check_code.html:49
+msgid "Your varify code"
+msgstr ""
+
+#: .\accounts\check_code.html:57 .\accounts\login.html:49
+msgid "Your Password"
+msgstr ""
+
+#: .\accounts\check_code.html:64
+msgid "Your Password Confirm"
+msgstr ""
+
+#: .\accounts\check_code.html:70 .\accounts\register.html:50
+msgid "Send"
+msgstr ""
+
+#: .\accounts\login.html:6 .\accounts\login.html:28
+msgid "Login Page"
+msgstr ""
+
+#: .\accounts\login.html:17 .\accounts\login.html:56
+msgid "Login"
+msgstr ""
+
+#: .\accounts\login.html:42 .\accounts\register.html:44
+msgid "Your Phone"
+msgstr ""
+
+#: .\accounts\register.html:6 .\accounts\register.html:28
+msgid "Register Page"
+msgstr ""
+
+#: .\accounts\register.html:17
+msgid "Register"
+msgstr ""

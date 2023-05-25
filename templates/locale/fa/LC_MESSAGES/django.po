@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-24 18:28+0330\n"
-"PO-Revision-Date: 2023-05-24 18:29+0330\n"
+"POT-Creation-Date: 2023-05-25 22:53+0330\n"
+"PO-Revision-Date: 2023-05-25 22:54+0330\n"
 "Last-Translator: Anonymous User <None>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,70 +23,109 @@ msgstr ""
 msgid "About"
 msgstr "درباره ما"
 
-#: .\_base.html:41 .\_base.html:42 .\_base.html:176
+#: .\_base.html:41 .\_base.html:175
 msgid "Contact"
 msgstr "ارتباط با ما"
 
-#: .\_base.html:43
+#: .\_base.html:42
 msgid "FAQs"
 msgstr "سوالات متداول"
 
-#: .\_base.html:45
+#: .\_base.html:44
 msgid "Change Language To Persian"
 msgstr "تغییر زبان به انگلیسی"
 
-#: .\_base.html:51
+#: .\_base.html:50 .\_base.html:231
 msgid "My Account"
 msgstr "حساب کاربری"
 
-#: .\_base.html:57
+#: .\_base.html:56
 msgid "profile"
 msgstr "پروفایل"
 
-#: .\_base.html:60
+#: .\_base.html:59
 msgid "logout"
 msgstr "خروج از حساب"
 
-#: .\_base.html:63
+#: .\_base.html:62
 msgid "add new address"
 msgstr "اضافه کردن آدرس"
 
-#: .\_base.html:69
+#: .\_base.html:68
 msgid "Sign in"
 msgstr "ورود به حساب"
 
-#: .\_base.html:72
+#: .\_base.html:71
 msgid "Sign up"
 msgstr "ثبت نام"
 
-#: .\_base.html:103
+#: .\_base.html:102
 msgid "Search for products"
 msgstr "جستجو در محصولات"
 
-#: .\_base.html:113
+#: .\_base.html:112
 msgid "Customer Service"
 msgstr "خدمات مشتریان"
 
-#: .\_base.html:165
+#: .\_base.html:126
+msgid "Categories"
+msgstr "دسته بندی ها"
+
+#: .\_base.html:164 .\_base.html:219
 msgid "Home"
 msgstr "خانه"
 
-#: .\_base.html:166
+#: .\_base.html:165
 msgid "Shop"
 msgstr "فروشگاه"
 
-#: .\_base.html:167
+#: .\_base.html:166 .\_base.html:223
 msgid "Shop Detail"
 msgstr "جزییات فروشگاه"
 
-#: .\_base.html:169
+#: .\_base.html:168
 msgid "Pages"
 msgstr "صفحه ها"
 
-#: .\_base.html:172
+#: .\_base.html:171 .\_base.html:225 .\_base.html:236
 msgid "Shopping Cart"
 msgstr "سبد خرید"
 
-#: .\_base.html:173
+#: .\_base.html:172 .\_base.html:227 .\_base.html:238
 msgid "Checkout"
 msgstr "تسویه و پرداخت"
+
+#: .\_base.html:207
+msgid "Get In Touch"
+msgstr "در ارتباط با ما"
+
+#: .\_base.html:208
+msgid "This is a simple shop project using Django for backend"
+msgstr "این یک پروژه فروشگاهی ساده با استفاده از جنگو برای بک اند است"
+
+#: .\_base.html:209
+msgid "Civil Department, Yazd University, Yazd, IRAN"
+msgstr " ایران-دانشگاه یزد-دانشکده عمران "
+
+#: .\_base.html:216
+msgid "Quick Shop"
+msgstr "نگاه سریع به فروشگاه"
+
+#: .\_base.html:221
+msgid "Our Shop"
+msgstr "فروشگاه"
+
+#: .\_base.html:234
+msgid "Profile"
+msgstr "پروفایل"
+
+#: .\_base.html:240
+msgid "Contact Us"
+msgstr "ارتباط با ما"
+
+#: .\_base.html:244
+msgid "Follow Us"
+msgstr "ما را دنبال کنید"
+
+#~ msgid "Multi"
+#~ msgstr "مولتی"
