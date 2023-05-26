@@ -49,5 +49,8 @@ class Cart:
 
         return total
 
+    def clear(self):
+        del self.session[CART_ID]
+
     def save(self):
         self.session.modified = True

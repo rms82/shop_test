@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-24 18:28+0330\n"
-"PO-Revision-Date: 2023-05-08 22:00+0330\n"
-"Last-Translator: Anonymous User <anonymous@user.tld>\n"
+"POT-Creation-Date: 2023-05-26 19:00+0330\n"
+"PO-Revision-Date: 2023-05-26 19:01+0330\n"
+"Last-Translator: Anonymous User <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,74 +19,99 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\cart\cart_detail.html:6
+#: .\cart_detail.html:6
 msgid "Cart Detail"
 msgstr "جزییات سبد خرید"
 
-#: .\cart\cart_detail.html:18
+#: .\cart_detail.html:18
 msgid "Home"
 msgstr "خانه"
 
-#: .\cart\cart_detail.html:19
+#: .\cart_detail.html:19
 msgid "Shop"
 msgstr "فروشگاه"
 
-#: .\cart\cart_detail.html:20
+#: .\cart_detail.html:20
 msgid "Shopping Cart"
 msgstr "سبد خرید"
 
-#: .\cart\cart_detail.html:35
+#: .\cart_detail.html:35 .\order_detail.html:21
 msgid "Image"
 msgstr "تصویر"
 
-#: .\cart\cart_detail.html:36
+#: .\cart_detail.html:36 .\order_detail.html:22
 msgid "Products"
 msgstr "محصولات"
 
-#: .\cart\cart_detail.html:37
+#: .\cart_detail.html:37 .\order_detail.html:23
 msgid "Price"
 msgstr "قیمت"
 
-#: .\cart\cart_detail.html:38
+#: .\cart_detail.html:38 .\order_detail.html:24
 msgid "Size"
 msgstr "سایز"
 
-#: .\cart\cart_detail.html:39
+#: .\cart_detail.html:39 .\order_detail.html:25
 msgid "Color"
 msgstr "رنگ"
 
-#: .\cart\cart_detail.html:40
+#: .\cart_detail.html:40 .\order_detail.html:26
 msgid "Quantity"
 msgstr "تعداد"
 
-#: .\cart\cart_detail.html:41 .\cart\cart_detail.html:100
+#: .\cart_detail.html:41 .\cart_detail.html:100 .\order_detail.html:27
+#: .\order_detail.html:82
 msgid "Total"
 msgstr "مجموع"
 
-#: .\cart\cart_detail.html:42
+#: .\cart_detail.html:42
 msgid "Remove"
 msgstr "حذف"
 
-#: .\cart\cart_detail.html:78
+#: .\cart_detail.html:78 .\order_detail.html:60
 msgid "Coupon Code"
 msgstr "کد تخفیف"
 
-#: .\cart\cart_detail.html:80
+#: .\cart_detail.html:80 .\order_detail.html:62
 msgid "Apply Coupon"
 msgstr "اعمال کد"
 
-#: .\cart\cart_detail.html:85
+#: .\cart_detail.html:85
 msgid "Cart Summary"
 msgstr "خلاصه سبدخرید"
 
-#: .\cart\cart_detail.html:90
+#: .\cart_detail.html:90 .\order_detail.html:72
 msgid "Subtotal"
 msgstr "هزینه کالا ها"
 
-#: .\cart\cart_detail.html:94
+#: .\cart_detail.html:94 .\order_detail.html:76
 msgid "Shipping"
 msgstr "هزینه ارسال"
 
-#: .\cart\cart_detail.html:105
+#: .\cart_detail.html:105
 msgid "Proceed To Checkout"
 msgstr "صفحه پرداخت"
+
+#: .\order_detail.html:6
+msgid "Order Detail"
+msgstr "جزییات سفارش"
+
+#: .\order_detail.html:67
+msgid "Order Summary"
+msgstr "خلاصه سفارش"
+
+#: .\order_detail.html:89
+msgid "Pay"
+msgstr "پرداخت"
+
+#: .\order_detail.html:96
+msgid "Select an address"
+msgstr "یک آدرس را انتخاب کنید"
+
+#: .\order_detail.html:109
+msgid "Add another address"
+msgstr "اضافه کردن آدرس جدید"
+
+#: .\order_detail.html:114
+msgid "You dont have any addresses!! Click to make one"
+msgstr "شما آدرسی ثبت نکردید.  برای ایجاد کلیک کنید"

@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import Group
+from django.utils.translation import gettext_lazy as _
 
 from .models import CustomUser, OTP, Address
 from .forms import CustomUserCreationForm, CustomUserChangeForm
@@ -24,8 +25,8 @@ class CustomUserAdmin(UserAdmin):
     list_filter = ["is_admin"]
     fieldsets = [
         (None, {"fields": ['phone', "email", "password"]}),
-        ("Personal info", {"fields": ["fullname"]}),
-        ("Permissions", {"fields": ["is_admin"]}),
+        (_("Personal info"), {"fields": ["fullname"]}),
+        (_("Permissions"), {"fields": ["is_admin"]}),
 
     ]
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
@@ -39,7 +40,7 @@ class CustomUserAdmin(UserAdmin):
             },
         ),
     ]
-    search_fields = ["email"]
+    search_fields = ["phone"]
     ordering = ["email"]
     filter_horizontal = []
     inlines = [AddressInline, ]
@@ -52,6 +53,7 @@ class OTPAdmin(admin.ModelAdmin):
 @admin.register(Address)
 class AddressAdmin(admin.ModelAdmin):
     list_display = ['user', 'fullname', 'email']
+
 
 # Now register the new UserAdmin...
 admin.site.register(CustomUser, CustomUserAdmin)

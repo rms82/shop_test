@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse
@@ -108,9 +108,15 @@ class AddressCreateView(LoginRequiredMixin, CreateView):
     login_url = LOGIN_URL
     form_class = AddressForm
     template_name = 'accounts/add_address.html'
-    success_url = '/'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-        
+
         return super().form_valid(form)
+
+    def get_success_url(self):
+        next_url = self.request.GET.get('next')
+        if next_url:
+            return next_url
+        else:
+            return reverse('home')

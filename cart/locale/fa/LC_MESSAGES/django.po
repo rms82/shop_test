@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-26 14:38+0330\n"
+"PO-Revision-Date: 2023-05-26 14:38+0330\n"
+"Last-Translator: Anonymous User <None>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\apps.py:8
+msgid "cart"
+msgstr "خرید"
+
+#: .\models.py:11 .\models.py:27
+msgid "order"
+msgstr "سفارش"
+
+#: .\models.py:12
+msgid "orders"
+msgstr "سفارش ها"
+
+#: .\models.py:14
+msgid "user"
+msgstr "کاربر"
+
+#: .\models.py:15
+msgid "total_price"
+msgstr "مجموع قیمت"
+
+#: .\models.py:16
+msgid "address"
+msgstr "ادرس"
+
+#: .\models.py:17
+msgid "is_paid"
+msgstr "پرداخت شده"
+
+#: .\models.py:25
+#| msgid "order"
+msgid "orderitem"
+msgstr "آیتم سفارش"
+
+#: .\models.py:26
+#| msgid "orders"
+msgid "orderitems"
+msgstr "آیتم های سفارش"
+
+#: .\models.py:28
+msgid "product"
+msgstr "محصول"
+
+#: .\models.py:29
+msgid "quantity"
+msgstr "تعداد"
+
+#: .\models.py:30
+msgid "color"
+msgstr "رنگ"
+
+#: .\models.py:31
+msgid "size"
+msgstr "سایز"
+
+#: .\models.py:32
+msgid "total"
+msgstr "مجموع"
