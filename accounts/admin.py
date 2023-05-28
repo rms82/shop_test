@@ -21,12 +21,13 @@ class CustomUserAdmin(UserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ['phone', "fullname", "is_admin"]
-    list_filter = ["is_admin"]
+    list_display = ['phone', "fullname", "is_superuser"]
+    list_filter = ["is_superuser"]
     fieldsets = [
         (None, {"fields": ['phone', "email", "password"]}),
         (_("Personal info"), {"fields": ["fullname"]}),
-        (_("Permissions"), {"fields": ["is_admin"]}),
+        (_("Permissions"), {"fields": ["is_superuser", 'is_staff', 'is_active']}),
+        (_("Groups"), {"fields": ["user_permissions", 'groups']}),
 
     ]
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
@@ -60,4 +61,4 @@ admin.site.register(CustomUser, CustomUserAdmin)
 admin.site.register(OTP, OTPAdmin)
 # ... and, since we're not using Django's built-in permissions,
 # unregister the Group model from admin.
-admin.site.unregister(Group)
+# admin.site.unregister(Group)

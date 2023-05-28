@@ -98,7 +98,7 @@ class CustomUserChangeForm(forms.ModelForm):
 
     class Meta:
         model = get_user_model()
-        fields = ["phone", 'email', "password", "fullname", "is_active", "is_admin"]
+        fields = ["phone", 'email', "password", "fullname", "is_active", "is_staff", "is_superuser"]
 
 
 class LoginForm(forms.Form):

@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 22:01+0430\n"
-"PO-Revision-Date: 2023-05-12 22:02+0330\n"
-"Last-Translator: Anonymous User <None>\n"
+"POT-Creation-Date: 2023-05-28 21:33+0330\n"
+"PO-Revision-Date: 2023-05-28 21:34+0330\n"
+"Last-Translator: Anonymous User <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,100 +19,136 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
+#: .\admin.py:28
+msgid "Personal info"
+msgstr ""
+
+#: .\admin.py:29
+msgid "Permissions"
+msgstr ""
+
+#: .\admin.py:30
+msgid "Groups"
+msgstr "گروه ها"
+
+#: .\api\serializers.py:23
+#| msgid "Passwords doesnt match!!"
+msgid "Passwords doesnt match!"
+msgstr "رمز عبور ها یکسان نیستند"
+
+#: .\api\serializers.py:39
+#| msgid "phone"
+msgid "Phone"
+msgstr "تلفن همراه"
+
+#: .\api\serializers.py:43
+msgid "Password"
+msgstr ""
+
+#: .\api\serializers.py:49
+msgid "Token"
+msgstr "توکن"
+
+#: .\api\serializers.py:65
+msgid "Unable to log in with provided credentials."
+msgstr ""
+
+#: .\api\serializers.py:68
+msgid "Must include \"username\" and \"password\"."
+msgstr ""
+
 #: .\apps.py:8
 msgid "accounts"
 msgstr "حساب ها"
 
-#: .\forms.py:26
+#: .\forms.py:28
 msgid "Phone Number should start with 0"
 msgstr "شماره تلفن باید با 0 شروع شود"
 
-#: .\forms.py:32
+#: .\forms.py:34
 msgid "Phone Number should be 11 numbers"
 msgstr "شماره تلفن باید 11 کاراکتر باشد"
 
-#: .\forms.py:38
+#: .\forms.py:40
 msgid "Phone Number must be all numbers"
 msgstr "شماره تلفن باید تماما از اعداد باشد"
 
-#: .\forms.py:47
+#: .\forms.py:49
 msgid "Password must be  more than 6 character"
 msgstr "رمز عبور باید از 6 کاراکتر بیشتر باشد"
 
-#: .\forms.py:52
+#: .\forms.py:54
 msgid "Password must not be all numbers"
 msgstr "رمز عبور تباید تنها دارای عدد باشد"
 
-#: .\forms.py:77
+#: .\forms.py:79
 msgid "Passwords don't match"
 msgstr "رمز عبور ها یکسان نیستند"
 
-#: .\forms.py:123
+#: .\forms.py:125
 msgid "Passwords doesnt match!!"
 msgstr "رمز عبور ها یکسان نیستند"
 
-#: .\models.py:39
+#: .\models.py:41
 msgid "CustomUser"
 msgstr "کاربر "
 
-#: .\models.py:40
+#: .\models.py:42
 msgid "CustomUsers"
 msgstr "کاربرها"
 
-#: .\models.py:42
+#: .\models.py:44
 msgid "Phone Number"
 msgstr "شماره تلفن"
 
-#: .\models.py:44
+#: .\models.py:46
 msgid "email address"
 msgstr "ادرس ایمیل"
 
-#: .\models.py:86
+#: .\models.py:73
 msgid "OTP"
 msgstr "رمز  یکبار مصرف"
 
-#: .\models.py:87
+#: .\models.py:74
 msgid "OTPS"
 msgstr "رمز های یکبار مصرف"
 
-#: .\models.py:101
-#| msgid "email address"
+#: .\models.py:88
 msgid "Address"
 msgstr "ادرس"
 
-#: .\models.py:102
+#: .\models.py:89
 msgid "Addresses"
 msgstr "ادرس ها"
 
-#: .\models.py:104
+#: .\models.py:91
 msgid "user"
 msgstr "کاربر"
 
-#: .\models.py:105
+#: .\models.py:92
 msgid "fullname"
 msgstr "نام کامل"
 
-#: .\models.py:106
+#: .\models.py:93
 msgid "email"
 msgstr "ایمیل"
 
-#: .\models.py:107
+#: .\models.py:94
 msgid "code_post"
 msgstr "کد پستی"
 
-#: .\models.py:108
+#: .\models.py:95
 msgid "phone"
 msgstr "تلفن همراه"
 
-#: .\models.py:109
-#| msgid "email address"
+#: .\models.py:96
 msgid "address"
 msgstr "ادرس"
 
-#: .\views.py:32
+#: .\views.py:37
 msgid "Wrong phone number or password!"
 msgstr "!شماره تلفن یا رمز عبور اشتباه است"
 
-#: .\views.py:52
+#: .\views.py:57
 msgid "User with this number already exists!!"
 msgstr "!جساب کاربری با این شماره از قبل وجود دارد"

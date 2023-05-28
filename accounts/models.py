@@ -1,11 +1,11 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.utils.translation import gettext_lazy as _
 
 
 # Create your manager here.
 class CustomUserManager(BaseUserManager):
-    def create_user(self, phone, password=None):
+    def create_user(self, phone, password=None, **extra_fields):
         """
         Creates and saves a User with the given email and password.
         """
@@ -14,6 +14,7 @@ class CustomUserManager(BaseUserManager):
 
         user = self.model(
             phone=phone,
+            **extra_fields
         )
 
         user.set_password(password)
@@ -28,13 +29,14 @@ class CustomUserManager(BaseUserManager):
             phone,
             password=password,
         )
-        user.is_admin = True
+        user.is_superuser = True
+        user.is_staff = True
         user.save(using=self._db)
         return user
 
 
 # Create your user model here.
-class CustomUser(AbstractBaseUser):
+class CustomUser(AbstractBaseUser, PermissionsMixin):
     class Meta:
         verbose_name = _('CustomUser')
         verbose_name_plural = _('CustomUsers')
@@ -50,7 +52,8 @@ class CustomUser(AbstractBaseUser):
     fullname = models.CharField(max_length=128, null=True, blank=True)
 
     is_active = models.BooleanField(default=True)
-    is_admin = models.BooleanField(default=False)
+    is_staff = models.BooleanField(default=False)
+    is_superuser = models.BooleanField(default=False)
 
     objects = CustomUserManager()
 
@@ -59,22 +62,6 @@ class CustomUser(AbstractBaseUser):
 
     def __str__(self):
         return self.phone
-
-    def has_perm(self, perm, obj=None):
-        "Does the user have a specific permission?"
-        # Simplest possible answer: Yes, always
-        return True
-
-    def has_module_perms(self, app_label):
-        "Does the user have permissions to view the app `app_label`?"
-        # Simplest possible answer: Yes, always
-        return True
-
-    @property
-    def is_staff(self):
-        "Is the user a member of staff?"
-        # Simplest possible answer: All admins are staff
-        return self.is_admin
 
 
 def has_rosetta_access(user):
