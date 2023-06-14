@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:38+0330\n"
-"PO-Revision-Date: 2023-05-26 14:38+0330\n"
-"Last-Translator: Anonymous User <None>\n"
+"POT-Creation-Date: 2023-06-14 17:24+0330\n"
+"PO-Revision-Date: 2023-06-14 17:24+0330\n"
+"Last-Translator: Anonymous User <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "cart"
 msgstr "خرید"
 
-#: .\models.py:11 .\models.py:27
+#: .\models.py:11 .\models.py:28
 msgid "order"
 msgstr "سفارش"
 
@@ -48,31 +48,45 @@ msgid "is_paid"
 msgstr "پرداخت شده"
 
 #: .\models.py:25
-#| msgid "order"
 msgid "orderitem"
 msgstr "آیتم سفارش"
 
 #: .\models.py:26
-#| msgid "orders"
 msgid "orderitems"
 msgstr "آیتم های سفارش"
 
-#: .\models.py:28
+#: .\models.py:29
 msgid "product"
 msgstr "محصول"
 
-#: .\models.py:29
+#: .\models.py:30 .\models.py:43
 msgid "quantity"
 msgstr "تعداد"
 
-#: .\models.py:30
+#: .\models.py:31
 msgid "color"
 msgstr "رنگ"
 
-#: .\models.py:31
+#: .\models.py:32
 msgid "size"
 msgstr "سایز"
 
-#: .\models.py:32
+#: .\models.py:33
 msgid "total"
 msgstr "مجموع"
+
+#: .\models.py:38
+msgid "off_code"
+msgstr "کد تخفیف"
+
+#: .\models.py:39
+msgid "off_codes"
+msgstr "کد تخفیف ها"
+
+#: .\models.py:41
+msgid "code"
+msgstr "کد"
+
+#: .\models.py:42
+msgid "off"
+msgstr "درصد تخفیف"

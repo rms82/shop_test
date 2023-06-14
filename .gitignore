@@ -139,3 +139,5 @@ GitHub.sublime-settings
 .idea/
 00*.py
 front_end/
+staticroot/
+fixtures/

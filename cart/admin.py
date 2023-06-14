@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Order, OrderItem
+from .models import Order, OrderItem, OffCode
 
 
 # Register your models here.
@@ -22,6 +22,16 @@ class OrderAdmin(admin.ModelAdmin):
     # edit page
     inlines = [OrderItemInline, ]
     save_on_top = True
+
+
+@admin.register(OffCode)
+class OrderAdmin(admin.ModelAdmin):
+    # list page
+    list_display = ['pk', 'code', 'off', 'quantity']
+    list_display_links = ['pk', 'code']
+    list_editable = ['quantity', ]
+    ordering = ['pk']
+    sortable_by = ['off', 'quantity']
 
 
 admin.site.register(OrderItem)

@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'django_filters',
     'drf_yasg',
+    'ckeditor',
 
 ]
 
@@ -150,6 +151,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticroot')
 
 # Media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

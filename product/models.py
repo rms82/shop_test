@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from ckeditor.fields import RichTextField
 
 
 # Create your models here.
@@ -31,7 +32,7 @@ class Product(models.Model):
         verbose_name_plural = _('products')
 
     title = models.CharField(max_length=128, verbose_name=_('title'))
-    description = models.TextField(verbose_name=_('description'))
+    description = RichTextField(verbose_name=_('description'))
 
     price = models.IntegerField(verbose_name=_('price'))
     off = models.SmallIntegerField(verbose_name=_('off'), null=True, blank=True,
