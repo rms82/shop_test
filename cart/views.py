@@ -1,10 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.core.exceptions import ObjectDoesNotExist
 from django.views.generic import View, TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 from cart.cart import Cart
-from cart.models import Order, OrderItem
+from cart.models import Order, OrderItem, OffCode
 from product.models import Product
 
 
@@ -58,3 +57,21 @@ class OrderDetailView(LoginRequiredMixin, View):
         order = get_object_or_404(Order, pk=pk)
 
         return render(request, 'cart/order_detail.html', {'order': order})
+
+
+class OffCodeView(LoginRequiredMixin, View):
+    def post(self, request, pk):
+        order = get_object_or_404(Order, pk=pk)
+        code = request.POST.get('off_code')
+
+        if code:
+            off_code = get_object_or_404(OffCode, code=code)
+
+            if off_code.quantity >= 1:
+                order.total_price -= (off_code.off / 100) * order.total_price
+                order.save()
+
+                off_code.quantity -= 1
+                off_code.save()
+
+        return redirect('order_detail', pk)

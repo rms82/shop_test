@@ -54,10 +54,10 @@
                 </table>
             </div>
             <div class="col-lg-4">
-                <form class="mb-30" action="">
+                <form class="mb-30" action="{% url 'off_code' order.pk %}" method="post">
                     {% csrf_token %}
                     <div class="input-group">
-                        <input type="text" class="form-control border-0 p-4" placeholder="{% trans 'Coupon Code' %}">
+                        <input type="text" name="off_code" class="form-control border-0 p-4" placeholder="{% trans 'Coupon Code' %}">
                         <div class="input-group-append">
                             <button class="btn btn-primary">{% trans 'Apply Coupon' %}</button>
                         </div>

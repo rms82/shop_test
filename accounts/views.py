@@ -31,6 +31,12 @@ class LoginView(View):
 
             if user:
                 login(request, user)
+
+                # redirect to next page
+                next_page = request.GET.get('next')
+                if next_page:
+                    return redirect(next_page)
+
                 return redirect('home')
 
             else:
@@ -61,7 +67,7 @@ class SignUpView(View):
                 code = randint(1111, 9999)
                 token = get_random_string(10)
 
-                SMS = ghasedakpack.Ghasedak("55fb92ff6575008a7ce1e94355fecacc1aba3bfcfe8939e54cf7adb49bcdd0af")
+                # SMS = ghasedakpack.Ghasedak("55fb92ff6575008a7ce1e94355fecacc1aba3bfcfe8939e54cf7adb49bcdd0af")
                 # SMS.verification(
                 #     {'receptor': phone, 'type': '1', 'template': 'testshop', 'param1': code})
 
