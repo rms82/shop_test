@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-03 01:05+0430\n"
-"PO-Revision-Date: 2023-05-03 01:06+0330\n"
-"Last-Translator: Anonymous User <None>\n"
+"POT-Creation-Date: 2023-06-18 17:37+0330\n"
+"PO-Revision-Date: 2023-06-18 17:38+0330\n"
+"Last-Translator: Anonymous User <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr "ارزان"
 msgid "expensive"
 msgstr "گران"
 
-#: .\admin.py:49 .\models.py:34
+#: .\admin.py:49 .\models.py:35
 msgid "description"
 msgstr "توضیحات"
 
@@ -43,54 +43,74 @@ msgstr "جزییات محصول"
 msgid "Info"
 msgstr "اطلاعات"
 
-#: .\apps.py:8 .\models.py:31
+#: .\apps.py:8 .\models.py:32
 msgid "products"
 msgstr "محصولات"
 
-#: .\models.py:8 .\models.py:11 .\models.py:42
+#: .\models.py:9 .\models.py:12 .\models.py:43
 msgid "size"
 msgstr "سایز"
 
-#: .\models.py:9
+#: .\models.py:10
 msgid "sizes"
 msgstr "سایز ها"
 
-#: .\models.py:19 .\models.py:22 .\models.py:41
+#: .\models.py:20 .\models.py:23 .\models.py:42
 msgid "color"
 msgstr "رنگ"
 
-#: .\models.py:20
+#: .\models.py:21
 msgid "colors"
 msgstr "رنگ ها"
 
-#: .\models.py:30 .\models.py:54
+#: .\models.py:31 .\models.py:56
 msgid "product"
 msgstr "محصول"
 
-#: .\models.py:33 .\models.py:53
+#: .\models.py:34 .\models.py:55
 msgid "title"
 msgstr "عنوان"
 
-#: .\models.py:36
+#: .\models.py:37
 msgid "price"
 msgstr "قیمت"
 
-#: .\models.py:37
+#: .\models.py:38
 msgid "off"
 msgstr "درصد تخفیف"
 
-#: .\models.py:38
+#: .\models.py:39
 msgid "off should less than 60%."
 msgstr "درصد تخفیف باید کمتر از 60 درصد باشد."
 
-#: .\models.py:40
+#: .\models.py:41
 msgid "image"
 msgstr "عکس"
 
-#: .\models.py:50
+#: .\models.py:44
+msgid "category"
+msgstr "دسته بندی"
+
+#: .\models.py:52
 msgid "Product Feature"
 msgstr "ویژگی محصول"
 
-#: .\models.py:51
+#: .\models.py:53
 msgid "Product Features"
 msgstr "ویژگی های محصول"
+
+#: .\models.py:64
+msgid "Category"
+msgstr "دسته بندی "
+
+#: .\models.py:65
+msgid "Categories"
+msgstr "دسته بندی ها"
+
+#: .\models.py:67
+msgid "parent"
+msgstr "والد"
+
+#: .\models.py:69
+msgid "name"
+msgstr "نام"

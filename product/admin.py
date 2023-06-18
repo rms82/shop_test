@@ -70,5 +70,10 @@ class ProductFeatureAdmin(admin.ModelAdmin):
     list_display = ['title']
 
 
+@admin.register(models.Category)
+class ProductFeatureAdmin(admin.ModelAdmin):
+    list_display = ['name', 'parent']
+
+
 admin.site.register(models.Color)
 admin.site.register(models.Size)

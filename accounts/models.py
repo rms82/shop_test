@@ -7,7 +7,7 @@ from django.utils.translation import gettext_lazy as _
 class CustomUserManager(BaseUserManager):
     def create_user(self, phone, password=None, **extra_fields):
         """
-        Creates and saves a User with the given email and password.
+        Creates and saves a User with the given phone and password.
         """
         if not phone:
             raise ValueError("Users must have a phone")

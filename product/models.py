@@ -41,6 +41,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='products/', verbose_name=_('image'))
     color = models.ManyToManyField(Color, verbose_name=_('color'), blank=True)
     size = models.ManyToManyField(Size, verbose_name=_('size'), blank=True)
+    category = models.ManyToManyField('Category', verbose_name=_('category'), blank=True)
 
     def __str__(self):
         return self.title
@@ -56,3 +57,16 @@ class ProductFeature(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Category(models.Model):
+    class Meta:
+        verbose_name = _("Category")
+        verbose_name_plural = _('Categories')
+
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, related_name='subs', verbose_name=_('parent'),
+                               null=True, blank=True)
+    name = models.CharField(max_length=32, verbose_name=_('name'))
+
+    def __str__(self):
+        return self.name
