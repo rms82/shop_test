@@ -5,7 +5,6 @@ coreapi==2.3.3
 coreschema==0.0.4
 Django==4.2
 django-admin-interface==0.26.0
-django-admin-persian-fonts==0.2
 django-ckeditor==6.5.1
 django-colorfield==0.9.0
 django-cors-headers==4.0.0
