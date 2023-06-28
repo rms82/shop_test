@@ -1,4 +1,5 @@
 {% extends '_base.html' %}
+{% load hitcount_tags %}
 {% load static %}
 {% load i18n %}
 
@@ -35,6 +36,8 @@
 
                     <form method="post" action="{% url 'cart_add' product.pk %}">
                         {% csrf_token %}
+                        <h5>{% trans 'Views ' %}: {% get_hit_count for product %}</h5>
+                        <br>
                         <div class="d-flex mb-3">
 
                             {#Django #}

@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
     'ckeditor',
+    'hitcount',
 
     # Admin
     "admin_interface",
