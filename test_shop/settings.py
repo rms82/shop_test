@@ -139,6 +139,7 @@ LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'templates/product/locale'),
     os.path.join(BASE_DIR, 'templates/cart/locale'),
     os.path.join(BASE_DIR, 'templates/home/locale'),
+    os.path.join(BASE_DIR, 'venv/Lib/site-packages/hitcount/locale'),
 
 ]
 

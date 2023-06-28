@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 16:50+0330\n"
-"PO-Revision-Date: 2023-06-28 16:53+0330\n"
+"POT-Creation-Date: 2023-06-28 23:37+0330\n"
+"PO-Revision-Date: 2023-06-28 23:40+0330\n"
 "Last-Translator: Anonymous User <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -28,7 +28,6 @@ msgid "$"
 msgstr "دلار"
 
 #: .\product_detail.html:39
-#| msgid "Reviews"
 msgid "Views "
 msgstr "تعداد بازدید"
 
@@ -63,3 +62,20 @@ msgstr "توضیحات محصول"
 #: .\product_detail.html:126
 msgid "Additional Information"
 msgstr "اطلاعات اضافه"
+
+#: .\product_list.html:6
+#| msgid "Product Detail"
+msgid "Product List"
+msgstr "لیست محصولات"
+
+#: .\product_list.html:16
+msgid "Filter by price"
+msgstr "فیلتر بر اساس قیمت"
+
+#: .\product_list.html:55
+msgid "Filter by color"
+msgstr "فیلتر بر اساس رنگ"
+
+#: .\product_list.html:76
+msgid "Filter by size"
+msgstr "فیلتر بر اساس سایز"
