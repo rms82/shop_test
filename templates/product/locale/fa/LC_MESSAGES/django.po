@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 23:37+0330\n"
+"POT-Creation-Date: 2023-07-03 16:26+0330\n"
 "PO-Revision-Date: 2023-06-28 23:40+0330\n"
 "Last-Translator: Anonymous User <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,63 +19,62 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\product_detail.html:7
+#: .\product\product_detail.html:7
 msgid "Product Detail"
 msgstr "جزییات محصول"
 
-#: .\product_detail.html:34
+#: .\product\product_detail.html:34
 msgid "$"
 msgstr "دلار"
 
-#: .\product_detail.html:39
+#: .\product\product_detail.html:39
 msgid "Views "
 msgstr "تعداد بازدید"
 
-#: .\product_detail.html:46
+#: .\product\product_detail.html:46
 msgid "Sizes:"
 msgstr "سایز"
 
-#: .\product_detail.html:66
+#: .\product\product_detail.html:66
 msgid "Colors:"
 msgstr "رنگ"
 
-#: .\product_detail.html:101
+#: .\product\product_detail.html:101
 msgid " Add To Cart"
 msgstr "اضافه به سبد خرید"
 
-#: .\product_detail.html:114
+#: .\product\product_detail.html:114
 msgid "Description"
 msgstr "توضیحات"
 
-#: .\product_detail.html:116
+#: .\product\product_detail.html:116
 msgid "Information"
 msgstr "اطلاعات "
 
-#: .\product_detail.html:118
+#: .\product\product_detail.html:118
 msgid "Reviews"
 msgstr "نظرات"
 
-#: .\product_detail.html:122
+#: .\product\product_detail.html:122
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: .\product_detail.html:126
+#: .\product\product_detail.html:126
 msgid "Additional Information"
 msgstr "اطلاعات اضافه"
 
-#: .\product_list.html:6
-#| msgid "Product Detail"
+#: .\product\product_list.html:6
 msgid "Product List"
 msgstr "لیست محصولات"
 
-#: .\product_list.html:16
+#: .\product\product_list.html:16
 msgid "Filter by price"
 msgstr "فیلتر بر اساس قیمت"
 
-#: .\product_list.html:55
+#: .\product\product_list.html:55
 msgid "Filter by color"
 msgstr "فیلتر بر اساس رنگ"
 
-#: .\product_list.html:76
+#: .\product\product_list.html:76
 msgid "Filter by size"
 msgstr "فیلتر بر اساس سایز"

@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-25 22:53+0330\n"
-"PO-Revision-Date: 2023-05-25 22:54+0330\n"
-"Last-Translator: Anonymous User <None>\n"
+"POT-Creation-Date: 2023-07-03 16:43+0330\n"
+"PO-Revision-Date: 2023-07-03 16:43+0330\n"
+"Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,11 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
+#: .\404.html:5 .\404.html:11
+msgid "Page not found"
+msgstr "صفحه پیدا نشد"
+
+#: .\404.html:14
+#| msgid "Home"
+msgid "Home Page"
+msgstr "صفحه خانه"
+
 #: .\_base.html:40
 msgid "About"
 msgstr "درباره ما"
 
-#: .\_base.html:41 .\_base.html:175
+#: .\_base.html:41 .\_base.html:185
 msgid "Contact"
 msgstr "ارتباط با ما"
 
@@ -35,7 +44,7 @@ msgstr "سوالات متداول"
 msgid "Change Language To Persian"
 msgstr "تغییر زبان به انگلیسی"
 
-#: .\_base.html:50 .\_base.html:231
+#: .\_base.html:50 .\_base.html:242
 msgid "My Account"
 msgstr "حساب کاربری"
 
@@ -71,59 +80,61 @@ msgstr "خدمات مشتریان"
 msgid "Categories"
 msgstr "دسته بندی ها"
 
-#: .\_base.html:164 .\_base.html:219
+#: .\_base.html:174 .\_base.html:230
 msgid "Home"
 msgstr "خانه"
 
-#: .\_base.html:165
+#: .\_base.html:175
 msgid "Shop"
 msgstr "فروشگاه"
 
-#: .\_base.html:166 .\_base.html:223
+#: .\_base.html:176 .\_base.html:234
 msgid "Shop Detail"
 msgstr "جزییات فروشگاه"
 
-#: .\_base.html:168
+#: .\_base.html:178
 msgid "Pages"
 msgstr "صفحه ها"
 
-#: .\_base.html:171 .\_base.html:225 .\_base.html:236
+#: .\_base.html:181 .\_base.html:236 .\_base.html:247
 msgid "Shopping Cart"
 msgstr "سبد خرید"
 
-#: .\_base.html:172 .\_base.html:227 .\_base.html:238
+#: .\_base.html:182 .\_base.html:238 .\_base.html:249
 msgid "Checkout"
 msgstr "تسویه و پرداخت"
 
-#: .\_base.html:207
+#: .\_base.html:217
 msgid "Get In Touch"
 msgstr "در ارتباط با ما"
 
-#: .\_base.html:208
+#: .\_base.html:218
 msgid "This is a simple shop project using Django for backend"
 msgstr "این یک پروژه فروشگاهی ساده با استفاده از جنگو برای بک اند است"
 
-#: .\_base.html:209
-msgid "Civil Department, Yazd University, Yazd, IRAN"
+#: .\_base.html:219
+msgid ""
+"Civil Department, Yazd\n"
+"                University, Yazd, IRAN"
 msgstr " ایران-دانشگاه یزد-دانشکده عمران "
 
-#: .\_base.html:216
+#: .\_base.html:227
 msgid "Quick Shop"
 msgstr "نگاه سریع به فروشگاه"
 
-#: .\_base.html:221
+#: .\_base.html:232
 msgid "Our Shop"
 msgstr "فروشگاه"
 
-#: .\_base.html:234
+#: .\_base.html:245
 msgid "Profile"
 msgstr "پروفایل"
 
-#: .\_base.html:240
+#: .\_base.html:251
 msgid "Contact Us"
 msgstr "ارتباط با ما"
 
-#: .\_base.html:244
+#: .\_base.html:255
 msgid "Follow Us"
 msgstr "ما را دنبال کنید"
 
