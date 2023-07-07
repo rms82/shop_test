@@ -23,6 +23,9 @@ class Cart:
 
             yield item
 
+    def __len__(self):
+        return len(self.cart.keys())
+
     def make_unique_id(self, product_id, color, size):
         unique = f'{product_id}_{color}_{size}'
 

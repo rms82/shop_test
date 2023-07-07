@@ -42,8 +42,10 @@ class DeleteCartItemView(View):
 class CreateOrderView(LoginRequiredMixin, View):
     def get(self, request):
         cart = Cart(request)
-        order = Order.objects.create(user=request.user, total_price=cart.total_cart())
+        if len(cart) == 0:
+            return redirect('home')
 
+        order = Order.objects.create(user=request.user, total_price=cart.total_cart())
         for item in cart:
             OrderItem.objects.create(order=order, product=item['product'], quantity=item['quantity'],
                                      color=item['color'], size=item['size'], total=item['total'])

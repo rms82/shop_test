@@ -10,7 +10,6 @@ class HomePage(TemplateView):
 def change_view(request):
     language_code = request.path[1:3]
     redirect_path = request.get_full_path()[3:]
-    print(redirect_path)
     if language_code == 'fa':
         return redirect('/en/')
 
