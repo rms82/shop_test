@@ -1,8 +1,11 @@
 from django.db import models
 from django.shortcuts import reverse
+from django.contrib.auth import get_user_model
 from django.utils.translation import gettext_lazy as _
 from ckeditor.fields import RichTextField
 
+
+USER = get_user_model()
 
 # Create your models here.
 class Size(models.Model):
@@ -71,6 +74,20 @@ class Category(models.Model):
     parent = models.ForeignKey('self', on_delete=models.CASCADE, related_name='subs', verbose_name=_('parent'),
                                null=True, blank=True)
     name = models.CharField(max_length=32, verbose_name=_('name'))
+    image = models.ImageField(upload_to='category/', blank=True, null=True, verbose_name=_('image'))
 
     def __str__(self):
         return self.name
+
+
+class Like(models.Model):
+    class Meta:
+        verbose_name = _('like')
+        verbose_name_plural = _('likes')
+
+    user = models.ForeignKey(USER, on_delete=models.CASCADE, related_name='likes', verbose_name=_("user"))
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='likes', verbose_name=_("product"))
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user}-{self.product}"

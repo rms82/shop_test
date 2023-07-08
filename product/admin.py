@@ -71,8 +71,14 @@ class ProductFeatureAdmin(admin.ModelAdmin):
 
 
 @admin.register(models.Category)
-class ProductFeatureAdmin(admin.ModelAdmin):
+class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'parent']
+
+
+@admin.register(models.Like)
+class LikeAdmin(admin.ModelAdmin):
+    list_display = ['user', 'product']
+    ordering = ('-created_at', )
 
 
 admin.site.register(models.Color)

@@ -1,8 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.http import JsonResponse
 from django.views import generic
+from django.contrib.auth.mixins import LoginRequiredMixin
 from hitcount.views import HitCountDetailView
 
-from .models import Product, Color, Size
+from .models import Product, Color, Size, Like
 
 
 # Product Detail View with user_view count
@@ -10,7 +12,7 @@ class ProductCountHitDetailView(HitCountDetailView):
     model = Product
     template_name = 'product/product_detail.html'
     context_object_name = 'product'
-    count_hit = True    # set to True if you want it to try and count the hit
+    count_hit = True  # set to True if you want it to try and count the hit
 
 
 # Product Detail View without user_view count
@@ -34,3 +36,17 @@ class ProductListView(generic.ListView):
         context['sizes'] = Size.objects.all()
 
         return context
+
+
+class LikeView(LoginRequiredMixin, generic.View):
+    def get(self, request, pk):
+        try:
+            like = Like.objects.get(product_id=pk, user=self.request.user)
+            like.delete()
+            response = {'like': False}
+
+        except Like.DoesNotExist:
+            Like.objects.create(user=self.request.user, product_id=pk)
+            response = {'like': True}
+
+        return JsonResponse(response)
