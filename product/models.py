@@ -42,7 +42,7 @@ class Product(models.Model):
     off = models.SmallIntegerField(verbose_name=_('off'), null=True, blank=True,
                                    help_text=_("off should less than 60%."))
 
-    image = models.ImageField(upload_to='products/', verbose_name=_('image'))
+    image = models.ImageField(upload_to='products/', verbose_name=_('image'), null=True, blank=True)
     color = models.ManyToManyField(Color, verbose_name=_('color'), blank=True)
     size = models.ManyToManyField(Size, verbose_name=_('size'), blank=True)
     category = models.ManyToManyField('Category', verbose_name=_('category'), blank=True)
