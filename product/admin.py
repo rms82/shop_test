@@ -70,9 +70,28 @@ class ProductFeatureAdmin(admin.ModelAdmin):
     list_display = ['title']
 
 
+class IsParentListFilter(admin.SimpleListFilter):
+    title = _('Parent Filter')
+    parameter_name = 'parent'
+
+    def lookups(self, request, model_admin):
+        return (
+            ('0', _('Sub Categories')),
+            ('1', _('Parent Categories')),
+        )
+
+    def queryset(self, request, queryset):
+        if self.value() == '0':
+            return queryset.filter(parent__in=queryset.all())
+
+        if self.value() == '1':
+            return queryset.exclude(parent__in=queryset.all())
+
+
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'parent']
+    list_filter = (IsParentListFilter, )
 
 
 @admin.register(models.Like)
