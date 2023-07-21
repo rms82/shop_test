@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 17:47+0330\n"
-"PO-Revision-Date: 2023-07-09 17:48+0330\n"
+"PO-Revision-Date: 2023-07-19 18:57+0330\n"
 "Last-Translator: Anonymous User <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -131,11 +131,11 @@ msgstr "نام"
 
 #: .\models.py:85
 msgid "like"
-msgstr ""
+msgstr "لایک"
 
 #: .\models.py:86
 msgid "likes"
-msgstr ""
+msgstr "لایک ها"
 
 #: .\models.py:88
 msgid "user"
